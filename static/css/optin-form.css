@@ -1,0 +1,476 @@
+@charset "UTF-8";
+.yas-ContentPane {
+  padding-top: 0; }
+
+@media (max-width: 599px) {
+  .mobile-fullwidth {
+    margin-left: 2% !important;
+    margin-right: -5% !important; } }
+
+@media (max-width: 849px) {
+  .ya_optin-form-page {
+    margin-top: -15px; } }
+
+.ya_optin-form-page .ya_header .ya_background {
+  background-image: url("/Portals/0/Skins/YogaV2/Images/optin-form/header-image-form.jpg");
+  background-size: cover;
+  background-position: top center;
+  height: 80px; }
+  @media (min-width: 330px) {
+    .ya_optin-form-page .ya_header .ya_background {
+      height: 140px; } }
+  @media (min-width: 480px) {
+    .ya_optin-form-page .ya_header .ya_background {
+      height: 160px; } }
+  @media (min-width: 600px) {
+    .ya_optin-form-page .ya_header .ya_background {
+      height: 240px; } }
+  @media (min-width: 768px) {
+    .ya_optin-form-page .ya_header .ya_background {
+      height: 420px; } }
+  .ya_optin-form-page .ya_header .ya_background.support-group {
+    background-image: url("/Portals/0/Skins/YogaV2/Images/optin-form/CommU_Subscribe-hero.jpg"); }
+
+.ya_optin-form-page .ya_header .ya_header-container {
+  padding: 30px;
+  padding-bottom: 20px;
+  max-width: 760px;
+  background-color: #fff;
+  border-top: 4px solid #B4341D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center; }
+  .ya_optin-form-page .ya_header .ya_header-container h1 {
+    margin: 0;
+    font-size: 18px;
+    border-bottom: 0; }
+    @media (min-width: 480px) and (max-width: 767px) {
+      .ya_optin-form-page .ya_header .ya_header-container h1 {
+        font-size: 30px; } }
+  .ya_optin-form-page .ya_header .ya_header-container p {
+    font-size: 14px; }
+  @media (min-width: 768px) {
+    .ya_optin-form-page .ya_header .ya_header-container {
+      margin: -120px auto 0 auto;
+      padding: 40px;
+      padding-bottom: 0; }
+      .ya_optin-form-page .ya_header .ya_header-container h1 {
+        font-size: 40px; }
+      .ya_optin-form-page .ya_header .ya_header-container p {
+        padding: 0 30px;
+        font-size: 18px; } }
+
+.ya_optin-form-page .ya_container {
+  max-width: 760px;
+  margin: 0 auto; }
+
+@media (min-width: 600px) {
+  .ya_optin-form-page .ya_form .ya_container {
+    width: 100%;
+    *zoom: 1; }
+    .ya_optin-form-page .ya_form .ya_container:before, .ya_optin-form-page .ya_form .ya_container:after {
+      display: table;
+      content: "";
+      line-height: 0; }
+    .ya_optin-form-page .ya_form .ya_container:after {
+      clear: both; } }
+
+.ya_optin-form-page .ya_form .ya_container .form-horizontal {
+  padding: 15px; }
+  @media (min-width: 600px) {
+    .ya_optin-form-page .ya_form .ya_container .form-horizontal {
+      padding: 0;
+      float: left;
+      margin-left: 2.12765%;
+      width: 74.46793%;
+      *width: 74.41473%; }
+      .ya_optin-form-page .ya_form .ya_container .form-horizontal:first-child {
+        margin-left: 0; } }
+  .ya_optin-form-page .ya_form .ya_container .form-horizontal .input-block-level {
+    height: 35px; }
+
+.ya_optin-form-page .ya_form .ya-validation-message {
+  top: 5px; }
+
+.ya_optin-form-page .ya_important-text {
+  padding: 10px;
+  background-color: #f27022;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5em;
+  text-align: center; }
+  @media (min-width: 600px) {
+    .ya_optin-form-page .ya_important-text {
+      padding: 20px;
+      font-size: 24px; } }
+
+.ya_optin-form-page .ya_important-list {
+  margin: 15px 5px 15px 30px;
+  color: #5d5d5d;
+  font-size: 12px; }
+  .ya_optin-form-page .ya_important-list li {
+    position: relative;
+    margin-bottom: 8px;
+    line-height: 15px;
+    text-align: left; }
+    .ya_optin-form-page .ya_important-list li:before {
+      content: "•";
+      font-size: 32px;
+      color: #9b9b9b;
+      position: absolute;
+      left: -20px; }
+  @media (min-width: 600px) {
+    .ya_optin-form-page .ya_important-list {
+      max-width: 440px;
+      margin: 30px auto;
+      font-size: 16px; }
+      .ya_optin-form-page .ya_important-list li {
+        margin-bottom: 10px;
+        line-height: 20px; } }
+
+.ya_optin-form-page .ya_action-options {
+  margin: 30px auto; }
+  @media (min-width: 600px) {
+    .ya_optin-form-page .ya_action-options {
+      width: 580px; } }
+  @media (min-width: 600px) {
+    .ya_optin-form-page .ya_action-options .ya_container {
+      width: 100%;
+      *zoom: 1; }
+      .ya_optin-form-page .ya_action-options .ya_container:before, .ya_optin-form-page .ya_action-options .ya_container:after {
+        display: table;
+        content: "";
+        line-height: 0; }
+      .ya_optin-form-page .ya_action-options .ya_container:after {
+        clear: both; } }
+  .ya_optin-form-page .ya_action-options .ya_container .ya_option {
+    text-align: center; }
+    @media (min-width: 600px) {
+      .ya_optin-form-page .ya_action-options .ya_container .ya_option {
+        float: left;
+        margin-left: 2.12765%;
+        width: 48.93607%;
+        *width: 48.88287%; }
+        .ya_optin-form-page .ya_action-options .ya_container .ya_option:first-child {
+          margin-left: 0; } }
+    .ya_optin-form-page .ya_action-options .ya_container .ya_option .ya_option-label {
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 18px;
+      width: 80%;
+      text-align: center; }
+      @media (min-width: 600px) {
+        .ya_optin-form-page .ya_action-options .ya_container .ya_option .ya_option-label {
+          display: table;
+          height: 40px;
+          width: 100%;
+          font-size: 16px; }
+          .ya_optin-form-page .ya_action-options .ya_container .ya_option .ya_option-label span {
+            display: table-cell;
+            vertical-align: middle; } }
+    .ya_optin-form-page .ya_action-options .ya_container .ya_option .ya_create-button {
+      display: inline-block;
+      line-height: 38px;
+      margin-top: 10px;
+      width: 180px;
+      height: 40px;
+      color: #fff;
+      background-color: #bababa;
+      border: 1px solid #9a9a9a;
+      border-radius: 5px;
+      font-size: 18px; }
+      .ya_optin-form-page .ya_action-options .ya_container .ya_option .ya_create-button:hover {
+        background-color: #9b9b9b;
+        text-decoration: none; }
+      .ya_optin-form-page .ya_action-options .ya_container .ya_option .ya_create-button.ya_informed {
+        background-color: #ea7501;
+        border-color: #ea7501; }
+        .ya_optin-form-page .ya_action-options .ya_container .ya_option .ya_create-button.ya_informed:hover {
+          background-color: #ce5a14 !important;
+          text-decoration: none; }
+  @media (max-width: 599px) {
+    .ya_optin-form-page .ya_action-options .ya_container .ya_option + .ya_option {
+      margin-top: 20px; } }
+
+.ya_optin-form-page .ya_sign-in {
+  text-align: center; }
+
+.ya_optin-form-page .ya_sign-up-button {
+  display: inline-block;
+  line-height: 54px;
+  margin-top: 10px;
+  width: 100%;
+  height: 55px;
+  color: #fff;
+  background-color: #bababa;
+  border: 1px solid #9a9a9a;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #ea7501;
+  border-color: #ea7501;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center; }
+  .ya_optin-form-page .ya_sign-up-button:hover {
+    background-color: #ea6a1c;
+    text-decoration: none; }
+
+.ya_optin-form-page.ya_sign-up .ya_header .ya_background {
+  background-image: url("/Portals/0/Skins/YogaV2/Images/optin-form/header-image-form-signup.jpg"); }
+
+.ya_optin-form-page.ya_sign-up .ya_tesimonial {
+  padding: 10px 20px; }
+  .ya_optin-form-page.ya_sign-up .ya_tesimonial h3 {
+    color: #B4341D;
+    font-family: ProximaNova-RegularIt, arial, sans-sarif;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.3em; }
+  .ya_optin-form-page.ya_sign-up .ya_tesimonial p {
+    font-size: 14px;
+    margin-top: 15px; }
+  @media (min-width: 768px) {
+    .ya_optin-form-page.ya_sign-up .ya_tesimonial {
+      padding: 20px 40px; }
+      .ya_optin-form-page.ya_sign-up .ya_tesimonial h3 {
+        font-size: 24px; } }
+
+.ya_optin-form-page.ya_sign-up h1 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .ya_optin-form-page.ya_sign-up h1 {
+      font-size: 42px;
+      margin: 30px auto 30px auto; } }
+
+.ya_optin-form-page.ya_sign-up .ya_info-connect {
+  text-align: center; }
+  @media (min-width: 768px) {
+    .ya_optin-form-page.ya_sign-up .ya_info-connect p {
+      font-size: 16px; } }
+
+.ya_optin-form-page.ya_sign-up .ya_what-to-expect {
+  margin-top: 30px;
+  max-width: 422px; }
+  .ya_optin-form-page.ya_sign-up .ya_what-to-expect h3 {
+    bottom: 0;
+    font-size: 20px;
+    color: #B4341D;
+    margin-left: 30px; }
+    @media (min-width: 768px) {
+      .ya_optin-form-page.ya_sign-up .ya_what-to-expect h3 {
+        margin-left: 0; } }
+  .ya_optin-form-page.ya_sign-up .ya_what-to-expect .ya_important-list {
+    margin-top: 15px; }
+
+.ya_optin-form-page .ya_validation-message-wrapper + p small {
+  margin-top: 15px;
+  float: left;
+  width: 100%; }
+
+#OptInModal {
+  max-height: 860px; }
+  #OptInModal .modal-body {
+    max-height: inherit; }
+  #OptInModal img {
+    width: 140px;
+    height: 140px; }
+  #OptInModal h1 {
+    color: #ea7501;
+    font-size: 16px;
+    font-family: ProximaNova-RegularIt, arial, sans-sarif;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    margin: 10px;
+    border-bottom: none; }
+  #OptInModal .ya_image-container {
+    text-align: center; }
+  #OptInModal h2 {
+    font-size: 18px;
+    font-family: ProximaNova-Semibold, arial, sans-sarif;
+    font-weight: normal;
+    font-style: normal; }
+  #OptInModal h3 {
+    margin-top: -10px; }
+  #OptInModal .ya_container {
+    margin-bottom: 20px; }
+    #OptInModal .ya_container .ya_option {
+      margin: 15px auto 0 auto;
+      width: 224px;
+      text-align: center; }
+    @media (max-width: 767px) {
+      #OptInModal .ya_container h2,
+      #OptInModal .ya_container h3,
+      #OptInModal .ya_container p {
+        text-align: center; } }
+  @media (min-width: 768px) {
+    #OptInModal {
+      width: 640px;
+      margin-left: -320px; }
+      #OptInModal h1 {
+        color: #ea7501;
+        font-size: 24px;
+        text-align: left;
+        margin-bottom: 30px; }
+      #OptInModal .ya_image-container {
+        text-align: left;
+        float: left; }
+      #OptInModal h2 {
+        font-size: 21px; }
+      #OptInModal h3 {
+        font-size: 18px;
+        margin-top: 10px; }
+      #OptInModal .ya_container {
+        margin-left: 150px; }
+        #OptInModal .ya_container .ya_option {
+          float: left;
+          width: 100%;
+          margin-bottom: 15px; }
+          #OptInModal .ya_container .ya_option .ya_option-label {
+            float: right;
+            width: 240px;
+            text-align: left; }
+          #OptInModal .ya_container .ya_option .ya_create-button {
+            margin-top: 0;
+            float: left; } }
+  #OptInModal .ya_create-button {
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    background-color: #bababa;
+    border: 1px solid #9a9a9a;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase; }
+    #OptInModal .ya_create-button:hover {
+      background-color: #9b9b9b;
+      text-decoration: none; }
+    #OptInModal .ya_create-button.ya_informed {
+      background-color: #ea7501;
+      border-color: #ea7501;
+      height: 55px;
+      line-height: 55px; }
+      #OptInModal .ya_create-button.ya_informed:hover {
+        background-color: #ce5a14 !important;
+        text-decoration: none; }
+  @media (max-width: 399px) {
+    #OptInModal {
+      top: 2% !important;
+      line-height: 1em; }
+      #OptInModal h1:first-child {
+        margin-top: 0; }
+      #OptInModal h2,
+      #OptInModal h3 {
+        font-size: 16px; }
+      #OptInModal .ya_option {
+        margin-top: 8px; }
+      #OptInModal .ya_create-button.ya_informed {
+        height: 40px;
+        line-height: 40px; } }
+
+#ConfirmAccountModal .modal-header {
+  border-bottom: none; }
+  #ConfirmAccountModal .modal-header .close {
+    opacity: 0.9;
+    text-shadow: none; }
+
+#ConfirmAccountModal > .modal-body {
+  padding: 0 0 15px 0 !important;
+  height: 100% !important;
+  max-height: 100% !important; }
+  #ConfirmAccountModal > .modal-body #yas-dnncontent {
+    padding: 0 !important; }
+
+@media (max-width: 767px) {
+  #ConfirmAccountModal {
+    top: 0 !important;
+    left: 0 !important;
+    margin: 0 !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    width: 100% !important; } }
+
+@media (min-width: 768px) {
+  #ConfirmAccountModal {
+    max-width: 1170px;
+    top: 0 !important;
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
+    height: 96% !important;
+    width: 97% !important; } }
+
+.ya-small-sticky-pane .ya-pane-2 #ConfirmAccountModal {
+  text-align: left; }
+
+.support-group-page .ya_header-container {
+  border-color: #739434 !important; }
+  @media (min-width: 768px) {
+    .support-group-page .ya_header-container {
+      margin-top: -190px !important; } }
+
+.support-group-page .ya_background {
+  background-image: url("/Portals/0/Skins/YogaV2/Images/foundation/eka/eka-signup-header.jpg") !important; }
+
+@media (min-width: 600px) {
+  .topic-subtitle {
+    text-align: center;
+    margin-left: 180px; } }
+
+.topic-list {
+  margin-bottom: -20px;
+  margin-top: 10px; }
+  .topic-list ul {
+    margin: 0;
+    padding: 0; }
+  .topic-list li {
+    margin: 0; }
+    .topic-list li input {
+      display: inline-block;
+      margin-right: 10px !important; }
+
+@media (max-width: 767px) {
+  .topic-list {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (min-width: 768px) {
+  .topic-list {
+    margin-left: 140px;
+    width: 550px; }
+    .topic-list ul {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .topic-list ul li {
+        width: 45%; } }
+
+.fullwidth-container {
+  margin-left: -15px;
+  margin-right: -15px; }
+  @media (min-width: 768px) {
+    .fullwidth-container {
+      margin-left: -30px;
+      margin-right: -30px; } }
+
+[id$="SignedUpSuceesfully"] .ya_header-container {
+  height: 140px; }
+  [id$="SignedUpSuceesfully"] .ya_header-container h1 {
+    color: #333 !important; }
+
+/*# sourceMappingURL=optin-form.css.map */

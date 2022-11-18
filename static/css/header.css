@@ -1,0 +1,896 @@
+/********************************
+ 	The Login Popup Settings
+*********************************/
+.ya-loginbox {
+  position: absolute;
+  right: 0;
+  top: 55px;
+  width: 245px;
+  z-index: 10001; }
+  @media (min-width: 980px) {
+    .ya-loginbox {
+      width: 285px; } }
+  .ya-loginbox .login-inner-box {
+    background-color: white;
+    padding: 20px !important;
+    border: 1px solid #BABABA; }
+    .ya-loginbox .login-inner-box .ya-logo {
+      width: 170px; }
+    .ya-loginbox .login-inner-box .ya-tagline {
+      font-family: ProximaNova-Regular, arial, sans-sarif;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 16px;
+      color: #B4341D;
+      margin-bottom: 10px;
+      margin-left: 67px; }
+    .ya-loginbox .login-inner-box input[type="text"], .ya-loginbox .login-inner-box input[type="password"] {
+      width: 180px; }
+    .ya-loginbox .login-inner-box fieldset {
+      padding-top: 10px; }
+    .ya-loginbox .login-inner-box .alert-error {
+      padding: 10px;
+      border: 1px solid #B4341D;
+      margin-left: -20px;
+      margin-right: -20px;
+      border-left: 0;
+      border-right: 0; }
+    .ya-loginbox .login-inner-box .btn {
+      margin: 10px 0; }
+  @media (max-width: 767px) {
+    .ya-loginbox {
+      position: absolute;
+      right: 0;
+      width: 100%;
+      *width: 100%;
+      z-index: 10001; } }
+
+#LoginContainer a.ya-link, #LoginContainer a:link.ya-link, #LoginContainer a:active.ya-link, #LoginContainer a:visited.ya-link {
+  color: #555;
+  cursor: pointer;
+  font-size: 16px; }
+
+#LoginContainer a:hover.ya-link {
+  color: #9A1307;
+  text-decoration: none; }
+
+.ya-clock-icon {
+  color: #B4341D; }
+
+.ya-check-icon {
+  color: #39874C; }
+
+/*************************************
+ 	The Login Popup Settings END
+**************************************/
+.dnnSearchResultPanel {
+  display: none; }
+
+.search-results-title {
+  margin-bottom: 18px; }
+
+.dnnSearchBoxPanel {
+  max-width: 100%;
+  background-color: transparent; }
+  .dnnSearchBoxPanel .dnnSearchBox {
+    margin: 0 !important;
+    border-color: #333;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    .dnnSearchBoxPanel .dnnSearchBox input[type="text"], .dnnSearchBoxPanel .dnnSearchBox input[type="text"]:focus {
+      position: static;
+      width: 100% !important; }
+    .dnnSearchBoxPanel .dnnSearchBox .dnnSearchBoxClearText {
+      top: 5px;
+      right: 10px !important; }
+    .dnnSearchBoxPanel .dnnSearchBox a.dnnSearchButton {
+      display: none; }
+
+.dnnSearchResultItem-Others {
+  display: none; }
+
+.dnnSearchResultContainer .dnnSearchResultItem {
+  margin-bottom: 15px; }
+  .dnnSearchResultContainer .dnnSearchResultItem .dnnSearchResultItem-Title {
+    margin-bottom: 0 !important; }
+    .dnnSearchResultContainer .dnnSearchResultItem .dnnSearchResultItem-Title a {
+      color: #B4341D;
+      font-size: 16px; }
+  .dnnSearchResultContainer .dnnSearchResultItem .dnnSearchResultItem-Link a {
+    color: #999;
+    font-size: 14px;
+    font-family: ProximaNova-Regular, arial, sans-sarif;
+    font-weight: normal;
+    font-style: normal; }
+    .dnnSearchResultContainer .dnnSearchResultItem .dnnSearchResultItem-Link a:hover {
+      color: #B4341D;
+      text-decoration: none; }
+  .dnnSearchResultContainer .dnnSearchResultItem .dnnSearchResultItem-Description b {
+    font-weight: normal; }
+
+.dnnSearchResultContainer .dnnSearchResultItem-Subset .dnnSearchResultItem-Title a {
+  color: #B4341D;
+  font-size: 16px; }
+
+.dnnSearchResultContainer .dnnSearchResultItem-Subset .dnnSearchResultItem-Link a {
+  color: #999;
+  font-size: 14px;
+  font-family: ProximaNova-Regular, arial, sans-sarif;
+  font-weight: normal;
+  font-style: normal; }
+  .dnnSearchResultContainer .dnnSearchResultItem-Subset .dnnSearchResultItem-Link a:hover {
+    color: #B4341D;
+    text-decoration: none; }
+
+.dnnSearchResultContainer .dnnSearchResultItem-Subset .dnnSearchResultItem-Description b {
+  font-weight: normal; }
+
+.dnnSearchBox_advanced {
+  display: none; }
+
+.dnnSearchResultPager {
+  padding: 10px 0; }
+
+#dnn_SearchBar_ClassicSearch {
+  position: absolute;
+  right: 0;
+  top: 65px; }
+  #dnn_SearchBar_ClassicSearch #dnn_SearchBar_cmdSearch {
+    display: none; }
+  #dnn_SearchBar_ClassicSearch #dnn_SearchBar_txtSearch {
+    width: 320px;
+    height: 14px;
+    font-size: 12px;
+    margin-right: 3px; }
+    @media (min-width: 768px) and (max-width: 998px) {
+      #dnn_SearchBar_ClassicSearch #dnn_SearchBar_txtSearch {
+        width: 280px; } }
+    @media (min-width: 999px) {
+      #dnn_SearchBar_ClassicSearch #dnn_SearchBar_txtSearch {
+        width: 320px; } }
+  #dnn_SearchBar_ClassicSearch .dnnSearchBoxClearText {
+    margin: 0; }
+
+@media (min-width: 850px) {
+  .is-logged + .ya-login-row + #dnn_SearchBar_ClassicSearch {
+    top: 98px; } }
+
+ul.searchSkinObjectPreview {
+  z-index: 2000;
+  -webkit-box-shadow: 1px 1px 6px #888;
+          box-shadow: 1px 1px 6px #888;
+  top: 25px;
+  right: 0;
+  margin-right: 2px;
+  border-color: #999; }
+  @media (max-width: 379px) {
+    ul.searchSkinObjectPreview {
+      width: 290px; } }
+  ul.searchSkinObjectPreview li {
+    padding: 6px 12px; }
+    ul.searchSkinObjectPreview li:first-child {
+      border-top: none; }
+    ul.searchSkinObjectPreview li > span {
+      color: #222; }
+    ul.searchSkinObjectPreview li p {
+      font-size: 12px;
+      color: #777; }
+  ul.searchSkinObjectPreview li.searchSkinObjectPreview_group {
+    background-color: #EDEBE7;
+    border-bottom: none;
+    font-family: ProximaNova-Semibold, arial, sans-sarif;
+    font-weight: normal;
+    font-style: normal; }
+    ul.searchSkinObjectPreview li.searchSkinObjectPreview_group:hover {
+      background-color: #EDEBE7; }
+  ul.searchSkinObjectPreview .searchSkinObjectPreview_more {
+    color: #B4341D; }
+
+.searchInputContainer a.dnnSearchBoxClearText {
+  z-index: 2001; }
+
+@media (max-width: 849px) {
+  #dnn_SearchBar_ClassicSearch {
+    top: 24px; } }
+
+@media (max-width: 499px) {
+  #dnn_SearchBar_ClassicSearch #dnn_SearchBar_txtSearch {
+    width: 240px; } }
+
+/* Header Styles */
+#yas-header {
+  padding: 0;
+  min-height: 170px;
+  -webkit-font-smoothing: antialiased; }
+  #yas-header .yas-dnnrow {
+    position: relative; }
+  @media (min-width: 850px) {
+    #yas-header {
+      margin-bottom: 10px; } }
+
+a#btnnavFadein {
+  padding: 0 10px 0 26px;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-position: 0 0;
+  background-color: transparent !important; }
+
+a#btnnavFadeout:before {
+  background: url("/Portals/0/Skins/YogaV2/Images/btn-back.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  color: transparent;
+  content: "Back";
+  float: left;
+  margin: 14px 8px;
+  padding: 0;
+  text-shadow: 0 0 0;
+  min-width: 30px; }
+
+@media (max-width: 479px) {
+  .ya-logged-in .ya-right-button-wrapper {
+    width: 185px !important; } }
+
+.btns-wrapper {
+  width: 100%;
+  float: left; }
+  @media (min-width: 850px) {
+    .btns-wrapper {
+      position: relative; } }
+  .btns-wrapper .ya-top-btns {
+    /*position:absolute;display:block;text-align:right;top:0; left:40px; right:40px;*/
+    position: relative;
+    display: block;
+    text-align: right;
+    float: right;
+    margin-right: 30px; }
+    @media (max-width: 479px) {
+      .btns-wrapper .ya-top-btns {
+        display: inline-block;
+        float: none;
+        margin: 0 auto;
+        min-width: 280px;
+        text-align: center;
+        padding-left: 12px; } }
+    .btns-wrapper .ya-top-btns .ya-left-button-wrapper {
+      display: inline-block;
+      float: left; }
+    .btns-wrapper .ya-top-btns .ya-right-button-wrapper {
+      display: inline-block;
+      width: 188px;
+      float: left; }
+      .btns-wrapper .ya-top-btns .ya-right-button-wrapper .btn {
+        float: left;
+        width: 100%; }
+      @media (max-width: 767px) {
+        .btns-wrapper .ya-top-btns .ya-right-button-wrapper {
+          width: 205px; } }
+      @media (max-width: 350px) {
+        .btns-wrapper .ya-top-btns .ya-right-button-wrapper {
+          /*width:180px;*/ } }
+    .btns-wrapper .ya-top-btns .separator {
+      display: inline-block;
+      margin: 14px 5px;
+      vertical-align: top;
+      color: white; }
+    .btns-wrapper .ya-top-btns .btn {
+      padding: 0 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      cursor: default;
+      text-shadow: none;
+      border-color: transparent;
+      font-family: ProximaNova-Regular, arial, sans-sarif;
+      font-weight: normal;
+      font-style: normal; }
+      .btns-wrapper .ya-top-btns .btn a {
+        color: white;
+        display: inline-block;
+        padding: 14px 0;
+        font-size: 14px;
+        cursor: pointer; }
+      .btns-wrapper .ya-top-btns .btn em {
+        font-style: normal; }
+    .btns-wrapper .ya-top-btns > .btn:first-child {
+      border-radius: 0 0 0 6px;
+      margin-right: 3px; }
+    .btns-wrapper .ya-top-btns > .btn:last-child {
+      border-radius: 0 0 6px 0; }
+  .btns-wrapper .btn-orange {
+    background: #e86c25;
+    border-radius: 0 0 0 4px;
+    margin: 0 2px 0 0;
+    -webkit-box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.2);
+    /*background:lighten(#e86c25, 5%);*/ }
+    .btns-wrapper .btn-orange:hover {
+      background: #e86c25;
+      border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); }
+    .btns-wrapper .btn-orange a.ya-hyperlink {
+      padding: 14px; }
+      .btns-wrapper .btn-orange a.ya-hyperlink .ya-search-icon {
+        margin: 0 5px; }
+        @media (max-width: 350px) {
+          .btns-wrapper .btn-orange a.ya-hyperlink .ya-search-icon {
+            display: none; } }
+      @media (max-width: 479px) {
+        .btns-wrapper .btn-orange a.ya-hyperlink .hidden-small-phone {
+          display: none; } }
+      @media (max-width: 330px) {
+        .btns-wrapper .btn-orange a.ya-hyperlink {
+          padding: 14px 10px; } }
+  .btns-wrapper .btn-red {
+    background: #B4341D;
+    border-radius: 0 0 4px 0;
+    -webkit-box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.2); }
+    .btns-wrapper .btn-red:hover {
+      background: #B4341D;
+      border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+      /*background:lighten($red, 5%);*/ }
+
+div.userProperties {
+  display: block;
+  float: left;
+  min-width: 0;
+  margin-top: 3px;
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  @media (max-width: 479px) {
+    div.userProperties {
+      margin-left: 10px; } }
+  @media (min-width: 480px) and (max-width: 849px) {
+    div.userProperties {
+      margin-left: 10px; } }
+  div.userProperties li.userName ul {
+    position: relative !important;
+    color: #5F6A72;
+    left: 0 !important; }
+    div.userProperties li.userName ul .yas-username {
+      color: #5F6A72;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 0 1px;
+      text-align: left;
+      line-height: 14px; }
+      div.userProperties li.userName ul .yas-username a {
+        max-width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 12px !important;
+        font-family: ProximaNova-Semibold, arial, sans-sarif;
+        font-weight: normal;
+        font-style: normal;
+        font-weight: normal !important;
+        color: #B4341D !important; }
+        @media (max-width: 350px) {
+          div.userProperties li.userName ul .yas-username a {
+            max-width: 170px; } }
+      div.userProperties li.userName ul .yas-username p {
+        font-size: 12px;
+        display: inline; }
+
+@media (max-width: 849px) {
+  div.userProperties.is-mobile-menu {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 9px 19px;
+    height: 60px;
+    width: 480px;
+    margin: 0; }
+    div.userProperties.is-mobile-menu li.userName ul .yas-username p {
+      font-size: 16px !important;
+      line-height: 1.4em; }
+    div.userProperties.is-mobile-menu li.userName ul .yas-username a {
+      font-size: 16px !important;
+      max-width: 1000px; }
+      div.userProperties.is-mobile-menu li.userName ul .yas-username a:before {
+        font-size: 16px !important; }
+  #SuperFish .yas-menustyle li a, #SuperFish .yas-menustyle li a:link, #SuperFish .yas-menustyle li a:active {
+    color: #333;
+    font-family: ProximaNova-Regular, arial, sans-sarif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px; }
+  #SuperFish .yas-menustyle ul {
+    background-color: transparent !important; } }
+
+@media (max-width: 767px) {
+  div.userProperties.is-mobile-menu {
+    height: 60px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc; } }
+
+.yas-dnnrow {
+  *zoom: 1; }
+  .yas-dnnrow:before, .yas-dnnrow:after {
+    display: table;
+    content: "";
+    line-height: 0; }
+  .yas-dnnrow:after {
+    clear: both; }
+
+.ya-login-row {
+  width: 100%;
+  float: left; }
+  .ya-login-row .yas-logo {
+    width: 108px; }
+    @media (min-width: 480px) {
+      .ya-login-row .yas-logo {
+        width: 150px; } }
+    @media (min-width: 850px) {
+      .ya-login-row .yas-logo {
+        width: 200px; } }
+  @media (min-width: 1050px) {
+    .ya-login-row {
+      margin-bottom: 5px;
+      margin-top: -10px; } }
+  .ya-login-row .yas-logo {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    padding: 0; }
+  .ya-login-row .yas-HeadPane {
+    margin-left: 0;
+    display: block;
+    text-align: left; }
+    @media (max-width: 490px) {
+      .ya-login-row .yas-HeadPane {
+        /*display:inline-block;*/ } }
+  .ya-login-row .ya-user-detail {
+    float: none !important;
+    max-width: 370px;
+    margin: 0 auto;
+    text-align: right; }
+
+.ya-small-sticky-pane {
+  float: left;
+  width: 100%; }
+  .ya-small-sticky-pane .ya-pane-1 {
+    width: 100%;
+    float: left; }
+  .ya-small-sticky-pane .ya-pane-2 {
+    width: 100%;
+    float: left; }
+  @media (max-width: 849px) {
+    .ya-small-sticky-pane {
+      width: 265px;
+      float: right; } }
+
+.ya-loginbox {
+  text-align: left;
+  right: 0;
+  font-size: 14px; }
+  .ya-loginbox .signinButton {
+    display: block;
+    margin: 10px 0 !important;
+    padding: 4px 12px !important; }
+  .ya-loginbox input[type="checkbox"] {
+    margin-top: 3px; }
+
+#LoginContainer .btns-wrapper {
+  float: right;
+  width: auto; }
+  @media (min-width: 850px) {
+    #LoginContainer .btns-wrapper {
+      margin-right: 10px; } }
+
+#LoginContainer .ya_group-search,
+#LoginContainer .ya_group-session {
+  float: left; }
+  #LoginContainer .ya_group-search .ya_container,
+  #LoginContainer .ya_group-session .ya_container {
+    color: white;
+    line-height: 20px;
+    height: 55px;
+    position: relative; }
+    #LoginContainer .ya_group-search .ya_container a,
+    #LoginContainer .ya_group-session .ya_container a {
+      color: white;
+      font-family: ProximaNova-Semibold, arial, sans-sarif;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 16px; }
+    #LoginContainer .ya_group-search .ya_container .separator,
+    #LoginContainer .ya_group-session .ya_container .separator {
+      display: inline-block;
+      margin: 0 6px; }
+    #LoginContainer .ya_group-search .ya_container:before,
+    #LoginContainer .ya_group-session .ya_container:before {
+      position: absolute;
+      left: 14px;
+      top: 21px;
+      font-family: YogaAlliance;
+      font-size: 20px;
+      color: white; }
+    @media (min-width: 480px) and (max-width: 849px) {
+      #LoginContainer .ya_group-search .ya_container:before,
+      #LoginContainer .ya_group-session .ya_container:before {
+        left: 11px; } }
+
+#LoginContainer .ya_group-search {
+  width: 340px;
+  margin-right: 10px; }
+  @media (min-width: 999px) {
+    #LoginContainer .ya_group-search {
+      width: 450px; } }
+  @media (max-width: 849px) {
+    #LoginContainer .ya_group-search {
+      position: absolute;
+      left: 0;
+      top: 115px;
+      width: 100%; }
+      #LoginContainer .ya_group-search .ya_container {
+        margin-right: 0 !important; } }
+  #LoginContainer .ya_group-search .ya_container {
+    background-color: #B4341D; }
+    #LoginContainer .ya_group-search .ya_container .ya_search-options {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row;
+              flex-flow: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 100%;
+      padding: 0 10px; }
+      @media (min-width: 380px) and (max-width: 599px) {
+        #LoginContainer .ya_group-search .ya_container .ya_search-options {
+          padding: 0 5%; } }
+      @media (min-width: 600px) and (max-width: 849px) {
+        #LoginContainer .ya_group-search .ya_container .ya_search-options {
+          padding: 0 20%; } }
+      #LoginContainer .ya_group-search .ya_container .ya_search-options span {
+        display: block; }
+        @media (min-width: 999px) {
+          #LoginContainer .ya_group-search .ya_container .ya_search-options span {
+            margin: 15px; } }
+      #LoginContainer .ya_group-search .ya_container .ya_search-options a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 100%; }
+        @media (min-width: 380px) {
+          #LoginContainer .ya_group-search .ya_container .ya_search-options a {
+            padding: 0 10px; } }
+        @media (min-width: 999px) {
+          #LoginContainer .ya_group-search .ya_container .ya_search-options a {
+            padding: 0 20px; } }
+        #LoginContainer .ya_group-search .ya_container .ya_search-options a:hover {
+          text-decoration: none; }
+
+#LoginContainer .ya_group-session {
+  width: 280px; }
+  @media (min-width: 999px) {
+    #LoginContainer .ya_group-session {
+      width: 320px; } }
+  #LoginContainer .ya_group-session .ya_container {
+    background-color: #F37021;
+    /* Safari 6.1+ */
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    /* Safari 6.1+ */
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-align-items: center;
+    /* Safari 7.0+ */ }
+    @media (min-width: 850px) {
+      #LoginContainer .ya_group-session .ya_container {
+        /* Safari 6.1+ */
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding-left: 0; } }
+    #LoginContainer .ya_group-session .ya_container a {
+      height: 100%;
+      padding: 0 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      /* Safari 6.1+ */
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-align-items: center;
+      /* Safari 7.0+ */ }
+      @media (min-width: 850px) {
+        #LoginContainer .ya_group-session .ya_container a {
+          padding: 0 20px; } }
+      @media (min-width: 999px) {
+        #LoginContainer .ya_group-session .ya_container a {
+          padding: 0 30px; } }
+      #LoginContainer .ya_group-session .ya_container a:hover {
+        background-color: #CE5A14;
+        text-decoration: none; }
+    #LoginContainer .ya_group-session .ya_container #viewDashboardLink span {
+      display: none; }
+      @media (min-width: 999px) {
+        #LoginContainer .ya_group-session .ya_container #viewDashboardLink span {
+          display: block; } }
+
+#LoginContainer a#btnnavFadein {
+  float: none;
+  display: inline-block;
+  font-size: 24px;
+  background-color: #f0f;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  background-position: center center;
+  padding: 0 15px;
+  position: relative; }
+  @media (min-width: 850px) {
+    #LoginContainer a#btnnavFadein {
+      display: none; } }
+
+#id-top-header-container {
+  margin-bottom: 15px; }
+  #id-top-header-container.is-not-logged {
+    margin-bottom: 10px; }
+  #id-top-header-container.is-logged .ya_group-session .ya_container {
+    padding-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #id-top-header-container.is-logged .ya_group-session .ya_container a {
+      padding: 0 8px; }
+
+.yas-username a:hover {
+  text-decoration: underline; }
+
+#dnn_SearchBar_ClassicSearch input.NormalTextBox {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 40px !important;
+  border-radius: 0;
+  font-size: 14px !important; }
+
+@media (min-width: 850px) {
+  #dnn_SearchBar_ClassicSearch {
+    margin-right: 10px; } }
+
+#id-top-header-container {
+  height: 55px; }
+  @media (min-width: 850px) {
+    #id-top-header-container + .ya-login-row {
+      margin-bottom: 10px;
+      margin-top: -45px; } }
+  #id-top-header-container.is-logged {
+    height: 180px; }
+    @media (min-width: 850px) {
+      #id-top-header-container.is-logged {
+        height: 110px; }
+        #id-top-header-container.is-logged + .ya-login-row {
+          margin-bottom: 45px;
+          margin-top: -80px; } }
+    #id-top-header-container.is-logged #LoginContainer .ya_group-search {
+      top: 145px; }
+    @media (max-width: 849px) {
+      #id-top-header-container.is-logged .userProperties {
+        display: none; } }
+  #id-top-header-container.is-not-logged {
+    margin-bottom: 130px; }
+    @media (min-width: 850px) {
+      #id-top-header-container.is-not-logged {
+        margin-bottom: 25px; }
+        #id-top-header-container.is-not-logged + .ya-login-row {
+          margin-top: -70px; } }
+
+.is-mobile-menu #id-top-header-container.is-logged .userProperties {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+@media (max-width: 389px) {
+  .yas-logo {
+    width: 50px !important;
+    height: 50px !important; }
+    .yas-logo #dnn_dnnLOGO_hypLogo {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: url("/Portals/0/Skins/YogaV2/Images/ya-symbol.svg");
+      background-size: 100%;
+      background-repeat: no-repeat; }
+      .yas-logo #dnn_dnnLOGO_hypLogo img {
+        display: none; } }
+
+@media (max-width: 849px) {
+  #LoginBox {
+    width: 100%;
+    top: 145px; } }
+
+@media (min-width: 850px) {
+  #LoginBox {
+    width: 280px; } }
+
+@media (min-width: 999px) {
+  #LoginBox {
+    width: 320px; } }
+
+@media (min-width: 480px) {
+  #LoginBox .login-inner-box {
+    padding: 20px 10px !important; } }
+
+#LoginBox .login-inner-box #LoginForm {
+  margin-top: 0; }
+  #LoginBox .login-inner-box #LoginForm input {
+    width: 100%;
+    height: 40px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 0; }
+  #LoginBox .login-inner-box #LoginForm .btn {
+    background-image: none;
+    background-color: #F37021;
+    border: 1px solid #F37021;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    color: white;
+    border-radius: 3px;
+    width: 280px;
+    height: 55px;
+    font-family: ProximaNova-Bold, arial, sans-sarif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 42px; }
+    #LoginBox .login-inner-box #LoginForm .btn:focus, #LoginBox .login-inner-box #LoginForm .btn.focus, #LoginBox .login-inner-box #LoginForm .btn:hover {
+      color: white;
+      background-color: #D5560D;
+      border-color: #D5560D !important; }
+    #LoginBox .login-inner-box #LoginForm .btn:active, #LoginBox .login-inner-box #LoginForm .btn.active,
+    .open > #LoginBox .login-inner-box #LoginForm .btn.dropdown-toggle {
+      color: white;
+      background-color: #D5560D;
+      border-color: #D5560D !important; }
+      #LoginBox .login-inner-box #LoginForm .btn:active:hover, #LoginBox .login-inner-box #LoginForm .btn:active:focus, #LoginBox .login-inner-box #LoginForm .btn:active.focus, #LoginBox .login-inner-box #LoginForm .btn.active:hover, #LoginBox .login-inner-box #LoginForm .btn.active:focus, #LoginBox .login-inner-box #LoginForm .btn.active.focus,
+      .open > #LoginBox .login-inner-box #LoginForm .btn.dropdown-toggle:hover,
+      .open > #LoginBox .login-inner-box #LoginForm .btn.dropdown-toggle:focus,
+      .open > #LoginBox .login-inner-box #LoginForm .btn.dropdown-toggle.focus {
+        color: white;
+        background-color: #D5560D;
+        border-color: #D5560D !important; }
+    #LoginBox .login-inner-box #LoginForm .btn:active, #LoginBox .login-inner-box #LoginForm .btn.active,
+    .open > #LoginBox .login-inner-box #LoginForm .btn.dropdown-toggle {
+      background-image: none; }
+    #LoginBox .login-inner-box #LoginForm .btn.disabled, #LoginBox .login-inner-box #LoginForm .btn.disabled:hover, #LoginBox .login-inner-box #LoginForm .btn.disabled:focus, #LoginBox .login-inner-box #LoginForm .btn.disabled.focus, #LoginBox .login-inner-box #LoginForm .btn.disabled:active, #LoginBox .login-inner-box #LoginForm .btn.disabled.active, #LoginBox .login-inner-box #LoginForm .btn[disabled], #LoginBox .login-inner-box #LoginForm .btn[disabled]:hover, #LoginBox .login-inner-box #LoginForm .btn[disabled]:focus, #LoginBox .login-inner-box #LoginForm .btn[disabled].focus, #LoginBox .login-inner-box #LoginForm .btn[disabled]:active, #LoginBox .login-inner-box #LoginForm .btn[disabled].active,
+    fieldset[disabled] #LoginBox .login-inner-box #LoginForm .btn,
+    fieldset[disabled] #LoginBox .login-inner-box #LoginForm .btn:hover,
+    fieldset[disabled] #LoginBox .login-inner-box #LoginForm .btn:focus,
+    fieldset[disabled] #LoginBox .login-inner-box #LoginForm .btn.focus,
+    fieldset[disabled] #LoginBox .login-inner-box #LoginForm .btn:active,
+    fieldset[disabled] #LoginBox .login-inner-box #LoginForm .btn.active {
+      background-color: #F37021;
+      border-color: #F37021 !important; }
+    #LoginBox .login-inner-box #LoginForm .btn .badge {
+      color: white;
+      background-color: #F37021; }
+    @media (min-width: 480px) {
+      #LoginBox .login-inner-box #LoginForm .btn {
+        width: 180px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 33px; } }
+
+#LoginBox .login-inner-box a.ya-action {
+  font-size: 18px; }
+  @media (min-width: 480px) {
+    #LoginBox .login-inner-box a.ya-action {
+      font-size: 14px; } }
+
+#yas-dnnmenu .yas-pophead {
+  display: none; }
+
+@media (max-width: 767px) {
+  #yas-dnnmenu.menu-logged-in {
+    top: 115px; } }
+
+@media (min-width: 768px) and (max-width: 849px) {
+  #yas-dnnmenu.menu-logged-in {
+    top: 204px; } }
+
+@media (max-width: 767px) {
+  #yas-dnnmenu {
+    width: 100%;
+    top: 55px;
+    height: auto; } }
+
+@media (min-width: 768px) and (max-width: 849px) {
+  #yas-dnnmenu {
+    border: 1px solid #bababa;
+    width: 480px;
+    height: auto;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+    right: 0;
+    top: 145px; }
+    #yas-dnnmenu .yas-menustyle > li {
+      border-bottom: none; } }
+
+#btnnavFadein.is-active {
+  background-color: #CE5A14 !important;
+  background-image: none; }
+  #btnnavFadein.is-active::before {
+    content: '1';
+    font-family: 'YogaAlliance';
+    position: absolute;
+    top: 12px;
+    right: 11px; }
+
+@media (max-width: 767px) {
+  body.is-mobile-menu {
+    position: fixed;
+    overflow: hidden; } }
+
+@media (max-width: 849px) {
+  #yas-header {
+    min-height: 200px; }
+  #LoginContainer .ya_group-search {
+    top: 145px; }
+  #LoginContainer .ya_group-session {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%; } }
+
+@media (min-width: 360px) and (max-width: 849px) {
+  #LoginContainer .ya_group-session .ya_container a {
+    padding: 0 25px; } }
+
+@media (min-width: 480px) and (max-width: 849px) {
+  .ya-login-row .yas-logo {
+    top: 10px; } }
+
+@media (max-width: 767px) {
+  body.is-mobile-menu #Notice {
+    display: none; }
+  body.is-mobile-menu #LoginContainer .ya_group-session {
+    top: 0;
+    z-index: 1; } }
+
+/*# sourceMappingURL=header.css.map */

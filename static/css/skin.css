@@ -1,0 +1,66 @@
+
+
+
+
+/* Skin styles for DotNetNuke  by dnnskin.net Overall support@dnnskin.net */  
+html								{ height:100%;}
+#Body								{ height:100%;font-family:'ProximaNova-Regular',  Arial, Helvetica, sans-serif;color:#444;  background:#fff}
+#Form								{ height:100%;}
+Body, .NormalTextBox, td, p, .Normal, .NormalDisabled, .NormalBold{ font-family:'ProximaNova-Regular', Arial, Helvetica, sans-serif;line-height:1.3em; color:#5a6167; font-size:14px; letter-spacing:normal}
+ul li 								{ list-style: none;}
+ins									{ background:#000; color:#fff; text-decoration:none; padding:1px 5px;}
+.Head								{ font:bold 1.2em Arial, Helvetica, sans-serif}
+.SubHead							{ color:#666}
+A.CommandButton:link,A.CommandButton:visited,
+A.CommandButton:active				{ font:bold small Arial, Helvetica, sans-serif}
+A.CommandButton:hover				{ color:#4e4efb}
+
+a,/* Haroon Changes 12-Nov-2013 i removed here a:link, because its creates problems for all theme buttons, the other links*/
+a:active,a:visited			{ text-decoration:none;outline:none;outline:0;} /* remove border:0, color:#424a51, because it creates layout issues for all buttons */
+/* because this stylesheet call at last, so it override our geiven styles like underlined.*/
+
+a:hover 							{ color:#951919;}
+h1,h2,h3,h4,h5,h6{ letter-spacing:normal}
+/*Skin Layout Design*/
+
+
+
+.glyph {font-size: 14px;float: left; width:20%}
+.glyph input { width:auto}
+.fs1 {font-size: 3em;}
+.box1 {
+		font-size: 14px;
+		display: inline-block;
+		width:17%;
+		padding:5px;
+		background: #eee;
+		margin: .5em 1em .5em 0;
+	}
+
+
+  #yas-SubMenu{ margin:0px; padding:0px; overflow:hidden;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;
+background-color: #b63310;
+background-image: -moz-linear-gradient(top, #d0411d, #fbb381);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d0411d), to(#fbb381));
+background-image: -webkit-linear-gradient(top, #d0411d, #fbb381);
+background-image: -o-linear-gradient(top, #d0411d, #fbb381);
+background-image: linear-gradient(to bottom, #d0411d, #fbb381);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFd0411d', endColorstr='#FFfbb381', GradientType=0);
+}
+#yas-SubMenu ul{ background:url(images/logo.png) top center no-repeat; margin:0px; padding:130px 20px 0 20px;}
+#yas-SubMenu ul ul{ margin:0px; padding:0px; background:none; display:none}
+#yas-SubMenu ul li{ border-top:1px #fff solid; position:relative}
+#yas-SubMenu ul li ul li,
+#yas-SubMenu ul li.first{ border-top:0px #fff solid}
+#yas-SubMenu ul li a{ color:#fff; font-size:15px; font-weight:bold; text-decoration:none; display:block; line-height:1em; padding:15px 0 15px 40px}
+#yas-SubMenu ul li a:hover{ color:#a32113}
+#yas-SubMenu ul .mmIcon{ position:absolute; left:0px; width:24px; top:10px;}
+
+#yas-SubMenu ul li.yas-sideCurrent a, #yas-SubMenu ul li.yas-sideBreadcrumb a{ background:url(images/tran10.png); margin:-1px -20px; padding:15px 20px 15px 60px;color:#a32113}
+#yas-SubMenu ul li.yas-sideCurrent ul li a, #yas-SubMenu ul li.yas-sideBreadcrumb ul li a{ background: none; color:#fff; font-weight:normal; padding:5px 20px 5px 60px}
+#yas-SubMenu ul li li.yas-sideCurrent ul a, #yas-SubMenu ul li ul li.yas-sideBreadcrumb a{ font-weight:bold; background:url(images/right.png) 60px center no-repeat; padding-left:70px}
+#yas-SubMenu ul li.yas-sideCurrent ul, #yas-SubMenu ul li.yas-sideBreadcrumb ul{ display:block}
+/* END CONTEXT MENU STYLES */
+
+  
