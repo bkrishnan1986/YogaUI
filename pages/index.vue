@@ -17,7 +17,7 @@
 		<p><a href="https://www.yogaalliance.org/AccountSetup" class="btn btn-orange btn-large input-medium">Register</a><a href="https://www.yogaalliance.org/TeacherRenewal" class="btn btn-orange btn-large input-medium">Renew</a>
 		</p>
 	</div>
-	<img class="background-image" src="_nuxt/image/home-hero-sanstext.jpg" alt="">
+	<img class="background-image" src="../public/image/home-hero-sanstext.jpg" alt="">
 </div></div>
 
 
@@ -33,7 +33,7 @@
             <div class="DnnModule DnnModule-DNN_HTML DnnModule-37705 DnnVersionableControl"><a name="37705"></a><div id="dnn_ctr37705_ContentPane"><!-- Start_Module_37705 --><div id="dnn_ctr37705_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
               <div id="dnn_ctr37705_HtmlModule_lblContent"><div class="hero-image-and-text" style="background-color: #EDEBE7;">
               <div class="graphic">
-                <a target="_blank" href="https://yogaalliance.org/annualreport" style="font-size: 16px;" rel="font-size: 16px;"><img src="_nuxt/image/annual_report_2020_2021.jpg" alt=""></a>
+                <a target="_blank" href="https://yogaalliance.org/annualreport" style="font-size: 16px;" rel="font-size: 16px;"><img src="../public/image/annual_report_2020_2021.jpg" alt=""></a>
               </div>
               <div class="info">
                 <br><br>
@@ -62,7 +62,7 @@
 			</p>
 		</div>
 		<div class="graphic" style="background-color: #E1E6E9;">
-			<a href="https://www.yogaalliance.org/Membership_Benefits/Member_Assistance_Program?Source=homepage"><img src="_nuxt/image/map-homepage-banner.png"></a>
+			<a href="https://www.yogaalliance.org/Membership_Benefits/Member_Assistance_Program?Source=homepage"><img src="../public/image/map-homepage-banner.png"></a>
 		</div>
 	</div>
 </div></div>
@@ -109,7 +109,7 @@
 </p>
 <div class="hero-image-and-text">
 	<div class="graphic">
-		<a target="_blank" href="https://www.yogaalliance.org/Foundation/Teaching_for_Equity_Program" style="font-size: 16px;" rel="font-size: 16px;"><img src="_nuxt/image/tfe-2022-application-closed.jpg" alt=""></a>
+		<a target="_blank" href="https://www.yogaalliance.org/Foundation/Teaching_for_Equity_Program" style="font-size: 16px;" rel="font-size: 16px;"><img src="../public/image/tfe-2022-application-closed.jpg" alt=""></a>
 	</div>
 	<div class="info">
 		<p style="font-size:26px; text-align: center;"><strong>Teaching for Equity Program</strong>
@@ -136,7 +136,7 @@
 	<div id="dnn_ctr32061_HtmlModule_lblContent"><div class="member-spotlight">
 	<div class="hero-image-and-text reverse-row-desktop">
 		<div class="graphic">
-			<img src="_nuxt/image/YAFButton_800x428.jpg" alt="">
+			<img src="../public/image/YAFButton_800x428.jpg" alt="">
 		</div>
 		<div class="info">
 			<p style="font-size:26px; text-align: center;"><strong>YA CommUnity</strong>
@@ -182,7 +182,7 @@
                       <div id="dnn_NewsPaneOne"><div class="DnnModule DnnModule-DNN_HTML DnnModule-29277 DnnVersionableControl"><a name="29277"></a><div id="dnn_ctr29277_ContentPane"><!-- Start_Module_29277 --><div id="dnn_ctr29277_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
 	<div id="dnn_ctr29277_HtmlModule_lblContent"><div class="update-category">Enhanced RYS Standards
 </div>
-<p><img alt="Enhanced RYS Standards " class="thumb" src="_nuxt/image/enhanced-rys.jpg" title="">
+<p><img alt="Enhanced RYS Standards " class="thumb" src="../public/image/enhanced-rys.jpg" title="">
 </p>
 <div class="info">
 	<p>Based on feedback from membership and the broader yoga community, Yoga Alliance launched new standards for its RYS 200 credential&nbsp;as well as a strengthened application and review process for all new RYS applicants. These enhanced standards now include the implementation of a strengthened RYS application process, which will provide for greater shared accountability to meet or exceed the new standards.
@@ -208,7 +208,7 @@
 	<div id="dnn_ctr29278_HtmlModule_lblContent"><div class="update-category">Support for Re-Opening &amp; Recovery
 </div>
 <p>
-	<a href="https://www.dropbox.com/s/e3gpadugg6mxtk6/YA_BacktoFlowToolkit.pdf?dl=0" target="_blank"><img alt="Guidebook to RYS Application" class="thumb" src="_nuxt/image/toolkit.jpg"></a>
+	<a href="https://www.dropbox.com/s/e3gpadugg6mxtk6/YA_BacktoFlowToolkit.pdf?dl=0" target="_blank"><img alt="Guidebook to RYS Application" class="thumb" src="../public/image/toolkit.jpg"></a>
 </p>
 <div class="info">
 	<p>To support you in maintaining safe in-person yoga teaching and practice, Yoga Alliance has partnered with the public health organization The Public Good Projects to create the <a class="ya-link" href="https://yogaalliance.org/toolkit" target="_blank"><em>Back to Flow</em> Toolkit</a>—a resource for you and the broader community to use in maintaining a safe, ahimsa-centered environment for the communities you serve.
@@ -234,7 +234,7 @@
                       <div id="dnn_NewsPaneThree"><div class="DnnModule DnnModule-DNN_HTML DnnModule-29279 DnnVersionableControl"><a name="29279"></a><div id="dnn_ctr29279_ContentPane"><!-- Start_Module_29279 --><div id="dnn_ctr29279_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
 	<div id="dnn_ctr29279_HtmlModule_lblContent"><div class="update-category">Online Learning Resources
 </div>
-<p><img alt="Online Learning Resources" class="thumb" src="_nuxt/image/support-site.jpg">
+<p><img alt="Online Learning Resources" class="thumb" src="../public/image/support-site.jpg">
 </p>
 <div class="info">
 	<p>Due to sweeping changes in the yoga industry, many classes and trainings are moving online. To support this transition, we have compiled a variety of online teaching best practices, tools, and resources for members to leverage. Members also have the option to display online offerings and closed-captioning capabilities to their YA profiles for directory users to easily find.
@@ -265,7 +265,7 @@
 	<div id="dnn_ctr29967_HtmlModule_lblContent"><div class="member-spotlight">
 	<div class="hero-image-and-text">
 		<div class="graphic" style="background-color: #E1E6E9;">
-			<img src="_nuxt/image/YAFButton_1122x600.jpg" alt="">
+			<img src="../public/image/YAFButton_1122x600.jpg" alt="">
 		</div>
 		<div class="info">
 			<p style="font-size:26px; text-align: center;"><strong>Yoga for Social Impact</strong>
