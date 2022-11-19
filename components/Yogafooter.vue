@@ -22,7 +22,7 @@
                 </ul>
             </div>
             <div class="block">
-                <span class="media-icon"><img alt="Media Inquiries" src="../static/image/media-icon.png" width="24" height="24"></span>
+                <span class="media-icon"><img alt="Media Inquiries" src="_nuxt/image/media-icon.png" width="24" height="24"></span>
                 <h5><a href="https://www.yogaalliance.org/Home/Media_Inquiries">Media Inquiries</a></h5>
             </div>
             <div class="block newsletter">
@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="ya-column-three">
-            <div class="ya_icons"><a class="ya-logo" href="https://www.yogaalliance.org/about"><img alt="Yoga Alliance" src="../static/image/ya_logo.svg"></a><a href="https://www.yogaalliance.org/foundation"><img alt="Yoga Alliance Foundation" src="../static/image/ya-foundation.svg"></a>
+            <div class="ya_icons"><a class="ya-logo" href="https://www.yogaalliance.org/about"><img alt="Yoga Alliance" src="_nuxt/image/ya_logo.svg"></a><a href="https://www.yogaalliance.org/foundation"><img alt="Yoga Alliance Foundation" src="_nuxt/image/ya-foundation.svg"></a>
             </div>
         </div>
     </div></div>

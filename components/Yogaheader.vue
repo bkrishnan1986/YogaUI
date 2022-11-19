@@ -85,7 +85,7 @@
     
                     <div class="ya-login-row">
                         <div class="yas-logo">
-                            <a id="dnn_dnnLOGO_hypLogo" title="Yoga Alliance" href="https://www.yogaalliance.org/"><img id="dnn_dnnLOGO_imgLogo" src="../static/image/Logo.png" alt="Yoga Alliance"></a>
+                            <a id="dnn_dnnLOGO_hypLogo" title="Yoga Alliance" href="https://www.yogaalliance.org/"><img id="dnn_dnnLOGO_imgLogo" src="_nuxt/image/Logo.png" alt="Yoga Alliance"></a>
                         </div>
     
                     </div>
