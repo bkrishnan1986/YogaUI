@@ -17,7 +17,7 @@
 		<p><a href="https://www.yogaalliance.org/AccountSetup" class="btn btn-orange btn-large input-medium">Register</a><a href="https://www.yogaalliance.org/TeacherRenewal" class="btn btn-orange btn-large input-medium">Renew</a>
 		</p>
 	</div>
-	<img class="background-image" src="../static/image/home-hero-sanstext .jpg" alt="">
+	<img class="background-image" src="../static/image/home-hero-sanstext.jpg" alt="">
 </div></div>
 
 
