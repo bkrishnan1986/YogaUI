@@ -57,7 +57,7 @@ Registry Marks for violating this policy.
 
 </div><div class="DnnModule DnnModule-DNN_HTML DnnModule-29887 DnnVersionableControl"><a name="29887"></a><div id="dnn_ctr29887_ContentPane"><!-- Start_Module_29887 --><div id="dnn_ctr29887_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
 	<div id="dnn_ctr29887_HtmlModule_lblContent"><div style="text-align: center;">
-<img alt="Yoga Alliance logo" src="./YA-Logo-Red-Hz-Clean.jpg" style="width: 100%; max-width: 175px;">
+<img alt="Yoga Alliance logo" src="../public/image/ya_logo.svg" style="width: 100%; max-width: 175px;">
 <br>
 &nbsp;
 <br>
