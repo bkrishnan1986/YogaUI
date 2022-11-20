@@ -84,7 +84,7 @@
                                 </ul>
                             </div>
                             <div class="column">
-                                <img src="../static/image/step-1.jpg" alt="">
+                                <img src="../public/image/step-1.jpg" alt="">
                             </div>
                         </div>
 
@@ -98,7 +98,7 @@
 
                             </div>
                             <div class="column">
-                                <img src="../static/image/step-2-update.jpg" alt="">
+                                <img src="../public/image/step-2-update.jpg" alt="">
                             </div>
                         </div>
 
@@ -109,7 +109,7 @@
                                 <p>Are you ready? <a target="_blank" href="https://www.yogaalliance.org/AccountSetup?applyRys=true">Let’s apply!</a> Be sure you have reviewed the standards underlying the RYS credential for which you’re applying. In addition, be sure you have compiled all the elements on the checklist and reviewed our new <a target="_blank" href="https://www.yogaalliance.org/New_RYS_Standards/The_Ethical_Commitment">Ethical Commitment</a>. Remember, we are just a phone call away, and we are here with you every step.</p>
                             </div>
                             <div class="column">
-                                <img src="../static/image/step-4.jpg" alt="">
+                                <img src="../public/image/step-4.jpg" alt="">
                             </div>
                         </div>
 
@@ -130,7 +130,7 @@
 
                             </div>
                             <div class="column is-6">
-                                <img src="../static/image/CroppedStep4.png" alt="">
+                                <img src="../public/image/CroppedStep4.png" alt="">
                             </div>
                         </div>
 
