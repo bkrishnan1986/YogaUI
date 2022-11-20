@@ -25,7 +25,7 @@
                                 <p><strong>It's exciting to see you are interested in applying for an RYS credential! Below you will find all the information you need in order to prepare for your application. Please note: All members will be required to up-level to forthcoming enhanced standards by December 31, 2023. You will hear from us in 2022 with next steps.</strong></p>
                             </div>
                             <div class="column is-3 text-center">
-                                <a class="btn btn-orange btn-large input-medium" target="_blank" href="https://www.yogaalliance.org/AccountSetup?applyRys=true">Apply Now</a>
+                                <a class="btn btn-orange btn-large input-medium" href="/school">Apply Now</a>
                             </div>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                                 </ul>
                             </div>
                             <div class="column">
-                                <img src="../public/image/step-1.jpg" alt="">
+                                <img src="../static/image/step-1.jpg" alt="">
                             </div>
                         </div>
 
@@ -98,7 +98,7 @@
 
                             </div>
                             <div class="column">
-                                <img src="../public/image/step-2-update.jpg" alt="">
+                                <img src="../static/image/step-2-update.jpg" alt="">
                             </div>
                         </div>
 
@@ -109,7 +109,7 @@
                                 <p>Are you ready? <a target="_blank" href="https://www.yogaalliance.org/AccountSetup?applyRys=true">Let’s apply!</a> Be sure you have reviewed the standards underlying the RYS credential for which you’re applying. In addition, be sure you have compiled all the elements on the checklist and reviewed our new <a target="_blank" href="https://www.yogaalliance.org/New_RYS_Standards/The_Ethical_Commitment">Ethical Commitment</a>. Remember, we are just a phone call away, and we are here with you every step.</p>
                             </div>
                             <div class="column">
-                                <img src="../public/image/step-4.jpg" alt="">
+                                <img src="../static/image/step-4.jpg" alt="">
                             </div>
                         </div>
 
@@ -130,7 +130,7 @@
 
                             </div>
                             <div class="column is-6">
-                                <img src="../public/image/CroppedStep4.png" alt="">
+                                <img src="../static/image/CroppedStep4.png" alt="">
                             </div>
                         </div>
 
@@ -141,7 +141,7 @@
                         <div class="columns">
                             <div class="column">
                                 <h2>Ready to apply?</h2>
-                                <a class="btn btn-orange btn-large input-medium" target="_blank" href="https://www.yogaalliance.org/AccountSetup?applyRys=true">Apply Now</a>
+                                <a class="btn btn-orange btn-large input-medium" href="/school">Apply Now</a>
                             </div>
                         </div>
                     </div>
