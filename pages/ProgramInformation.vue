@@ -139,8 +139,7 @@
                                                     
                                                     <br>
                                                     <div style="background-color: lightsteelblue; width:100%; border-radius: 15px; height: 5px;">
-        <div style="background-color: maroon; width:50%; color: white; height: 5px;
-                border-radius: 15px;"></div>
+        <div style="background-color: maroon; width:50%; color: white; height: 5px; border-radius: 15px;"></div>
     </div>
 
                                                     <div>
@@ -274,14 +273,13 @@
                                                                     <p style="margin-bottom: 30px; margin-right: 130px;">
                                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                                             </p>
-                                                            <button type="button" style="background-color: white; height: auto; width: 200px; border: 3px solid orange; color: orange;" id="addTrainerButton" class="btn" @click="addTrainerButtonClicked">Add a Trainer</button>
-                                                            <div id="AddTrainerForm" style="display:none; background: rgb(242, 242, 242); height: auto; padding: 15px; border: 2px solid green; width: 700px;">
+                                                            <button type="button" style="background-color: white; height: auto; padding: 5px; width: 200px; border: 2px solid orange; color: orange ;" id="addTrainerButton" class="btn" @click="addTrainerButtonClicked">Add a Trainer</button>
+                                                            <div id="AddTrainerForm" style="display: none; background: rgb(242, 242, 242); height: auto; padding: 15px; border: 2px solid green; width: 700px;">
                                                                 <h4 style="font-weight: bold;">Add a Trainer</h4>
                                                                 <hr>
-                                                                <div>
+                                                                <div id="TrainerSearchForm" style="display: none;">
                                                                 <label style="display: inline; margin-right: 110px;">Search by</label>
                                                                 <label style="display: inline;">Name</label>
-                                                                </div>
                                                                 <div>
                                                                     <select style="width: 150px; height: 25px;  margin-right: 20px;">
                                                                 <option>Name</option>
@@ -291,7 +289,25 @@
                                                                     <input style="display: inline; width: 150px; height: 15px;" type="text">
                                                                 </div>
                                                                 <button class="btn btn-orange btn-large input-medium" style="width: 150px; font-weight: bold; height: 35px; font-size: small; text-align: top;" id="searchTrainerButton" @click="searchTrainerButtonClicked">Search </button>
-<div id="displayTrinerData" style="display: none;">
+                                                                
+                                                                </div>
+                                                                <div id="displayTrainerResultData" style="display: none;">
+                                                                    <br>
+    <label v-text="1" style="display: inline; font-size: 20px;"></label>
+<label style="display: inline; font-size: 20px;">  Results Found  </label>
+<label style="display: inline; font-weight: bold; color: maroon;">  x Clear Search</label>
+<br><hr>
+<label style="display: inline; font-weight: bold; margin-left: 10px; margin-right: 115px;">Name</label>
+<label style="display: inline; font-weight: bold; margin-right: 110px;">Designation</label>
+<label style="display: inline; font-weight: bold; color: maroon; margin-right: 10px;">Location</label>
+<div style="height: 70px; font-size: 20px; border-radius: 10px; padding: 10px; border: 2px solid lightgray; background-color: white;">
+<label style="display: inline; font-weight: bold; margin-right: 50px;"><a href="https://calendly.com/credentialingconsultation/60min" target="_blank" style="font-weight: bold;">Charlote Raiser</a></label>
+<label style="display: inline; font-weight: bold; margin-right: 130px;">RYT 200</label>
+<label style="display: inline; font-weight: bold; margin-right: 130px;">Rockville, MD</label>
+<button style="border-radius: 5px;" id="selectTrainerButton" @click="selectTrainerButtonClicked">Select</button>
+</div>
+</div>
+                                                                <div id="displaytrainerdetailData" style="display: none;">
     <label for="TxtSchoolName">
                                                         Is the trainer is a lead trainer?
                                                     </label>
@@ -304,10 +320,10 @@
                                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. <br><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                                             </p>
                                                             <label>Enter a message for Charlotte Raich</label>
-                                                        <div style="height: 100px; font-size: 20px; padding: 10px; border: 2px solid lightgray; margin: 10px;"></div>
+                                                        <div style="height: 100px; padding: 10px; border: 2px solid lightgray; margin: 10px;"></div>
                                                         
 </div><br>
-                                                                <button type="button" id="trainerCancelButton" style="display:inline; margin: 10px;" class="btn" @click="searchStaff">Cancel</button>
+                                                        <button type="button" id="trainerCancelButton" style="display:inline; margin: 10px;" class="btn" @click="searchStaff">Cancel</button>
                                                         <button type="button" id="trainerBackButton" style="display: none; margin: 10px;" class="btn" @click="searchStaff">Back</button>
                                                         <button type="button" id="trainerSendButton" style="display: none; margin: 10px;" class="btn" @click="searchStaff">Send confirmation</button>
                                                             
@@ -320,7 +336,7 @@
                                                             <div id="FacultyForm" style="display:none; background: rgb(242, 242, 242); height: auto; padding: 15px; border: 2px solid green; width: 700px;">
                                                                 <h4 style="font-weight: bold;">Add a Faculty member</h4>
                                                                 <hr>
-                                                                <div id="AddFacultyForm" style="display:none;">
+                                                                <div id="FacultySearchForm" style="display:none;">
                                                                 <label style="display: inline; margin-right: 120px;">Search by</label>
                                                                 <label style="display: inline;">Name</label>
                                                                 <div>
@@ -350,7 +366,7 @@
 <button style="border-radius: 5px;" id="selectFacultyButton" @click="selectFacultyButtonClicked">Select</button>
 </div>
 </div>
-<div id="displayFacultydetailData" style="display: none;">
+                                                                <div id="displayFacultydetailData" style="display: none;">
 <table>
                                                                     <thead>
                                                                         <tr>
@@ -367,7 +383,7 @@
                                                                 </table>
                                                                 <br>
                                                             <label style="font-weight: bold;">Education<span class="ya-required" style="font-size: 14px;">*</span></label>
-                                                        <input style="height: 100px; border-radius: 7px; font-size: 20px; padding: 10px; border: 2px solid lightgray; margin: 10px; width: 600px;">
+                                                        <input style="height: 100px; border-radius: 7px; padding: 10px; border: 2px solid lightgray; margin: 10px; width: 600px;">
                                                         <label>Charecters left: 8000</label>
                                                         <br>
                                                         <label for="TxtSchoolName" style="font-weight: bold;">
@@ -379,24 +395,24 @@
                                                         <label for="TxtSchoolName">  Upload summery of backgroud and experience</label><br>
 <br>
 <label style="font-weight: bold;">Background<span class="ya-required" style="font-size: 14px;">*</span></label>
-<input style="height: 100px; border-radius: 7px; font-size: 20px; padding: 10px; border: 2px solid lightgray; margin: 10px; width: 600px;">
+<input style="height: 100px; border-radius: 7px; padding: 10px; border: 2px solid lightgray; margin: 10px; width: 600px;">
                                                         <label>Charecters left: 8000</label>
                                                         <br>
 <label style="font-weight: bold;">Experience<span class="ya-required" style="font-size: 14px;">*</span></label>
-<input style="height: 100px; font-size: 20px; padding: 10px; border-radius: 7px; border: 2px solid lightgray; margin: 10px; width: 600px;">
+<input style="height: 100px; padding: 10px; border-radius: 7px; border: 2px solid lightgray; margin: 10px; width: 600px;">
                                                         <label>Charecters left: 8000</label>
                                                         <br>
 <label style="font-weight: bold;">Instagram Username</label>
-<input style="height: 15px; font-size: 20px; padding: 10px; border-radius: 5px; border: 2px solid lightgray; margin-bottom: 10px; width: 450px;">
+<input style="height: 15px; padding: 10px; border-radius: 5px; border: 2px solid lightgray; margin-bottom: 10px; width: 450px;">
                                                         <br>
 <label style="font-weight: bold;">Twitter Username</label>
-<input style="height: 15px; font-size: 20px; padding: 10px; border-radius: 5px; border: 2px solid lightgray; margin-bottom: 10px; width: 450px;">
+<input style="height: 15px; padding: 10px; border-radius: 5px; border: 2px solid lightgray; margin-bottom: 10px; width: 450px;">
 
                                                         <br>
 <label style="font-weight: bold;">Facebook dnn_userLogin_registerLink</label>
-<input style="height: 15px; font-size: 20px; padding: 10px; border-radius: 5px; border: 2px solid lightgray; margin-bottom: 10px; width: 450px;">
+<input style="height: 15px; padding: 10px; border-radius: 5px; border: 2px solid lightgray; margin-bottom: 10px; width: 450px;">
                                                         <label style="font-weight: bold;">Website URL</label>
-                                                        <input style="height: 15px; font-size: 20px; padding: 10px; border-radius: 5px; border: 2px solid lightgray; margin-bottom: 10px; width: 450px;">
+                                                        <input style="height: 15px; padding: 10px; border-radius: 5px; border: 2px solid lightgray; margin-bottom: 10px; width: 450px;">
                                                         
                                                         <br><label for="TxtSchoolName" style="font-weight: bold;">
                                                                     Assertion<span class="ya-required" style="font-size: 14px;">*</span>
@@ -441,11 +457,11 @@
                                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. <br><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                                             </p>
                                                             <label>Enter a message for Charlotte Raich</label>
-                                                            <input style="height: 100px; border-radius: 7px; font-size: 20px; padding: 10px; border: 2px solid lightgray; margin: 10px; width: 600px;">
+                                                            <input style="height: 100px; border-radius: 7px; padding: 10px; border: 2px solid lightgray; margin: 10px; width: 600px;">
                                                         
                                                         
 </div>
-                                                        <button type="button" id="facultyCancelButton" style="display:inline; margin: 10px;" class="btn" @click="searchStaff">Cancel</button>
+                                                        <button type="button" id="facultyCancelButton" style="display:inline; margin: 10px;" class="btn" @click="facultyCancelButtonClick">Cancel</button>
                                                         <button type="button" id="facultyBackButton" style="display: none; margin: 10px;" class="btn" @click="searchStaff">Back</button>
                                                         <button type="button" id="facultySendButton" style="display: none; margin: 10px;" class="btn" @click="searchStaff">Send confirmation</button>
                                                             
@@ -478,7 +494,7 @@
                                                         <input id="dnn_SearchBar_SiteRadioButton" type="radio" name="dnn$SearchBar$Search" value="SiteRadioButton" class="ya-highlight-checked" />
                                                         <label for="TxtSchoolName">  No</label><br><br>
                                                         <label>Please describe your prequesites:</label>
-                                                        <div style="height: 100px; width: 700px; font-size: 20px; padding: 10px; border: 2px solid lightgray; border-radius: 8px;"></div>
+                                                        <input style="height: 100px; border-radius: 7px; padding: 10px; border: 2px solid lightgray; width: 700px;">
                                                         <br>
                                                                 <label>what is your teacher trainee ratio </label>
                                                             
@@ -583,32 +599,57 @@
 </template>
 
 <script setup>
-function addFacultyButtonClicked(){
-    console.log("clicked");
-    var x =document.getElementById("FacultyForm");
-    var y =document.getElementById("AddFacultyForm");
+function addTrainerButtonClicked(){
+    var x =document.getElementById("AddTrainerForm");
+    var y =document.getElementById("TrainerSearchForm");
+    var back =document.getElementById("trainerBackButton");
+    var send =document.getElementById("trainerSendButton");
+    var resultData =document.getElementById("displaytrainerResultData");
+    var detail =document.getElementById("displaytrainerdetailData");
     if(x.style.display == "none"){
         x.style.display = "block";
         y.style.display = "block";
+        back.style.display = "none";
+        send.style.display = "none";
+        resultData.style.display = "none";
+        detail.style.display = "none";
     }
     else{
         x.style.display = "none";
         y.style.display = "none";
+        back.style.display = "none";
+        send.style.display = "none";
+        resultData.style.display = "none";
+        detail.style.display = "none";
     }
 }
-function addTrainerButtonClicked(){
-    console.log("clicked");
-    var x =document.getElementById("AddTrainerForm");
+function addFacultyButtonClicked(){
+    var x =document.getElementById("FacultyForm");
+    var y =document.getElementById("FacultySearchForm");
+    var back =document.getElementById("facultyBackButton");
+    var send =document.getElementById("facultySendButton");
+    var resultData =document.getElementById("displayFacultyResultData");
+    var detail =document.getElementById("displayFacultydetailData");
     if(x.style.display == "none"){
-        x.style.display = "block"
+        x.style.display = "block";
+        y.style.display = "block";
+        back.style.display = "none";
+        send.style.display = "none";
+        resultData.style.display = "none";
+        detail.style.display = "none";
     }
     else{
-        x.style.display = "none"
+        x.style.display = "none";
+        y.style.display = "none";
+        back.style.display = "none";
+        send.style.display = "none";
+        resultData.style.display = "none";
+        detail.style.display = "none";
     }
+    
 }
 function searchTrainerButtonClicked(){
-    console.log("clicked");
-    var x =document.getElementById("displayTrinerData");
+    var x =document.getElementById("displayTrainerResultData");
     var back =document.getElementById("trainerBackButton");
     var send =document.getElementById("trainerSendButton");
     if(x.style.display == "none"){
@@ -623,21 +664,74 @@ function searchTrainerButtonClicked(){
     }
 }
 function searchFacultyButtonClicked(){
-    console.log("clicked");
     var x =document.getElementById("displayFacultyResultData");
     var back =document.getElementById("facultyBackButton");
     var send =document.getElementById("facultySendButton");
     if(x.style.display == "none"){
         x.style.display = "block";
+        back.style.display = "inline";
+        send.style.display = "inline";
     }
     else{
         x.style.display = "none";
+        back.style.display = "none";
+        send.style.display = "none";
+    }
+}
+function trainerCancelButtonClick(){
+    var x =document.getElementById("AddTrainerForm");
+    var y =document.getElementById("TrainerSearchForm");
+    var back =document.getElementById("trainerBackButton");
+    var send =document.getElementById("trainerSendButton");
+    var resultData =document.getElementById("displaytrainerResultData");
+    var detail =document.getElementById("displaytrainerdetailData");
+    x.style.display = "block";
+    y.style.display = "block";
+    back.style.display = "none";
+    send.style.display = "none";
+    resultData.style.display = "none";
+    detail.style.display = "none";
+}
+function facultyCancelButtonClick(){
+    var x =document.getElementById("FacultyForm");
+    var y =document.getElementById("FacultySearchForm");
+    var back =document.getElementById("facultyBackButton");
+    var send =document.getElementById("facultySendButton");
+    var resultData =document.getElementById("displayFacultyResultData");
+    var detail =document.getElementById("displayFacultydetailData");
+    x.style.display = "block";
+    y.style.display = "block";
+    back.style.display = "none";
+    send.style.display = "none";
+    resultData.style.display = "none";
+    detail.style.display = "none";
+}
+function selectTrainerButtonClicked(){
+    var x =document.getElementById("displaytrainerdetailData");
+    var y =document.getElementById("TrainerSearchForm");
+    var back =document.getElementById("trainerBackButton");
+    var send =document.getElementById("trainerSendButton");
+    var result =document.getElementById("displaytrainerResultData");
+    result.style.display = "none";
+        y.style.display = "none";
+    if(x.style.display == "none"){
+        x.style.display = "block";
+        back.style.display = "inline";
+        send.style.display = "inline";
+        result.style.display = "none";
+        y.style.display = "none";
+    }
+    else{
+        x.style.display = "none";
+        back.style.display = "none";
+        send.style.display = "none";
+        result.style.display = "none";
+        y.style.display = "none";
     }
 }
 function selectFacultyButtonClicked(){
-    console.log("clicked");
     var x =document.getElementById("displayFacultydetailData");
-    var y =document.getElementById("AddFacultyForm");
+    var y =document.getElementById("FacultySearchForm");
     var back =document.getElementById("facultyBackButton");
     var send =document.getElementById("facultySendButton");
     var result =document.getElementById("displayFacultyResultData");
@@ -656,7 +750,7 @@ function selectFacultyButtonClicked(){
         send.style.display = "none";
         result.style.display = "none";
         y.style.display = "none";
+        console.log("Select Faculty");
     }
 }
-
 </script>

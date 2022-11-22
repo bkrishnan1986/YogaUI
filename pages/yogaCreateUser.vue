@@ -393,6 +393,13 @@
                                                 <div class="ya_validation-message-wrapper">
 
                                                 </div>
+                                                <div id="dnn_ctr11321_RegistrationView_UcJoin1_YaPasswordChecker_ctlPassword_passwordContainer"
+                                                    class="password-strength-container">
+                                                
+                                                    <input name="dnn$ctr11321$RegistrationView$UcJoin1$YaPasswordChecker$ctlPassword$txtNewPassword" type="password"
+                                                        maxlength="39" id="dnn_ctr11321_RegistrationView_UcJoin1_YaPasswordChecker_ctlPassword_txtNewPassword"
+                                                        class="password-strength validate-success" size="25">
+                                                </div>
                                             </div>
                                         </div>
 
