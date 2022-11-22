@@ -85,7 +85,7 @@
 	<div class="columns is-multiline is-centered" style="max-width: 880px; margin-left: auto; margin-right: auto;">
 		<div class="column is-5">
 			<h4 style="text-align: center;"><strong>Registered Yoga Schools</strong></h4>
-			<a href="/YogaSchool" class="btn btn-orange btn-large">Online Teacher Training Requirements</a>
+			<a href="/YogaCreateUser" class="btn btn-orange btn-large">Online Teacher Training Requirements</a>
 		</div>
 		<div class="column is-5">
 			<h4 style="text-align: center;"><strong>Registered Yoga Teachers</strong></h4>

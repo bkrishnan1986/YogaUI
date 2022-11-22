@@ -1,0 +1,198 @@
+/* CSS Resets */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,
+blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,
+ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,
+label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+	border:0;
+}
+
+article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%}img, object, embed{ max-width: 100%;}img { height: auto;}table td img, table td object, table td embed{ max-width: 100%;}table td img { height: auto;}
+
+
+.clr									{ clear:both}
+.fleft									{ float:left}
+.fright									{ float:right}
+
+/* Each page section is contained in a .yas-dnnrow. header, menu, body, footer */
+.yas-dnnrow { 
+	width: 100%;
+	max-width:1170px;
+	min-width:755px;
+	margin: 0 auto
+}
+/* yas-dnncontent contains the main content area dnncontent>dnnrow>marginlr */
+/* this is a browny gray color - left and right borders of main content area*/
+#yas-dnncontent .yas-dnnrow	{ 
+	background: #E6E6DE;
+}
+
+
+/* MAIN CONTENT */
+/* The left and right margins allow the browny gray background to show, making borders */
+#yas-dnncontent .yas-dnnrow .yas-marginlr {
+	background:#fff;
+	margin:0 30px;
+	min-height:200px;
+}
+/* ID on the main content <div> */
+#yas-main-content {
+
+}
+
+/* Allow the un-used panes to collapse when not in Edit Page mode */
+#yas-main-content .row-fluid [class*="span"].DNNEmptyPane {
+		min-height: 0;
+	}
+#yas-main-content .row-fluid [class*="span"].DNNEmptyPane.dnnSortable {
+		min-height: 30px;
+	}
+
+.radius	{ 
+	-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;
+}
+
+.shadow	{ 
+	-webkit-box-shadow:1px 1px 0px rgba(0, 0, 0, 0.1);-moz-box-shadow:1px 1px 0px rgba(0, 0, 0, 0.1);box-shadow:1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* FIRST DIV - MAIN WRAPPER */
+#yas-dnnwrapper
+{ position:relative}
+
+/* HEADER - <header> above top menu */
+#yas-header	{ 
+	padding: 28px 0 0;
+	margin: 0;
+	min-height: 123px;
+	border: none;
+	background-color: white;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dddddd), color-stop(0.5, white), to(white));
+	background-image: -webkit-linear-gradient(#dddddd, white 50%, white);
+	background-image: -moz-linear-gradient(#dddddd, white 50%, white);
+	background-image: -o-linear-gradient(#dddddd, white 50%, white);
+	background-image: linear-gradient(#dddddd, white 50%, white);
+	background-repeat: no-repeat;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFDDDDDD', endColorstr='#FFFFFFFF', GradientType=0);
+	padding-bottom: 24px; /*Added as a fix - there was no bottom padding */
+}
+
+/* LOGO  - site logo */
+.yas-logo { 
+	padding:0px; text-align:center; text-align:left
+}
+h2.yas-slogan { 
+	color:#B4341D; 
+	font-size:28px; 
+	padding:24px 0 0;
+	font-weight: normal;
+	font-family: ProximaNova-Regular, Arial;
+}
+
+/* TOP MENU - <nav> main menu */
+#yas-nav { 
+	text-align: center;
+	margin:0px;
+	padding: 0px;
+	background-color: #971512;
+	background-image: -moz-linear-gradient(top, #cb4810, #971512);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cb4810), to(#971512));
+	background-image: -webkit-linear-gradient(top, #cb4810, #971512);
+	background-image: -o-linear-gradient(top, #cb4810, #971512);
+	background-image: linear-gradient(to bottom, #cb4810, #971512);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFCB4810', endColorstr='#FF971512', GradientType=0);
+}
+/* TOP MENU - parent for both mobile and main menus */
+#yas-dnnmenu { 
+	margin:0px; padding:0px;
+}
+
+#yas-dnnmenu:after { 
+	display:block; 
+	content:''; 
+	clear:both
+}
+
+
+/* FOOTER TOP - footer content section*/
+.ya-footer-top { 
+	background-color: #b63310;
+	background-image: -moz-linear-gradient(top, #cb4810, #971512);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cb4810), to(#971512));
+	background-image: -webkit-linear-gradient(top, #cb4810, #971512);
+	background-image: -o-linear-gradient(top, #cb4810, #971512);
+	background-image: linear-gradient(to bottom, #cb4810, #971512);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFCB4810', endColorstr='#FF971512', GradientType=0);
+	padding: 40px 0 25px 0;
+	color:#fff;
+}
+
+.ya-footer-top .Normal,
+.ya-footer-top .Normal a,
+.ya-footer-top h1,
+.ya-footer-top h2,
+.ya-footer-top h3,
+.ya-footer-top h4 { 
+	color:#fff; text-decoration:none
+}
+
+.yas-footerlogo	{ 
+	text-align:right; padding:20px 20% 0 0
+}
+
+.yas-copyright { 
+	display:block; text-align:center; font-size:12px
+}
+
+.yas-HeadPane { 
+	margin-left:4%
+}
+
+/* Added so dnnFormMessages have something to push off of. otherwise their top margin causes a gap at top of page and side bars */
+.yas-ContentPane {
+	padding-top:1px;
+}
+
+/* TOP FOOTER PANES - containers for content*/
+.yas-FAPane	{ width:34%;}
+.yas-FBPane,.yas-FCPane,.yas-FDPane { width:20%;}
+
+ul.yas-flink { 
+	margin:0px; padding:0px;
+}
+
+.yas-pophead { 
+	display:none
+}
+
+/* USER MENU - top right corner of page */
+div.userProperties						{ position:relative; z-index:100}
+div.userProperties:after				{ display:block; content:''; clear:both}
+div.userProperties ul					{ margin:0px; padding:0px}
+div.userProperties a					{ text-decoration:none; color:#4E453E}
+div.userProperties a:hover				{ color:#971714}
+div.userProperties ul li.userRegister	{ float:left; margin-right:30px}
+div.userProperties ul li.userLogin		{ float:left}
+div.userProperties ul li.userRegister span,
+div.userProperties ul li.userLogin span	{ padding-right:10px; font-size:16px; color:#858585}
+div.userProperties ul li 				{ font-size:14px;}
+div.userProperties ul li.userProfile	{ float:left; width:85px}
+div.userProperties ul li.userProfile img{ width:100%}
+div.userProperties ul li.userName ul	{ position:absolute; left:110px; top:0px;}
+div.userProperties ul li.userName ul li span{ padding-right:5px; font-size:16px; color:#858585}
+div.userProperties ul li.userName ul li.yas-username a{ font-size:16px; font-weight:bold; color:#4E453E}
+
+
+/*FOTTER BOTTOM*/
+#yas-footer									{ padding:0px 0 20px  ; margin:0px; font-size:11px; clear:both;}
+#yas-footer .yas-dnnrow						{ background:#e6e6de; padding:20px 0;-webkit-border-radius: 0 0 20px 20px;-moz-border-radius:0 0 20px 20px;border-radius:0 0 20px 20px}
+
+a#btnnavFadein,a#btnnavFadeout			{ display:none}
+
+
+
+
+
+@media handheld, only screen and (max-width: 760px){
+}

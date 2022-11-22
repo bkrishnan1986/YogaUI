@@ -1,3 +1,14 @@
+<style>
+.legal-agreemnt-block {
+    background-color: #F9F9F9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.legal-agreemnt-block iframe {
+    background-color: white;
+    border: 1px solid #979797;
+}
+</style>
 <template>
 <Yogaheader/>
 <section id="yas-dnncontent" class="yas-Col12">
@@ -168,6 +179,7 @@
 <div class="row-fluid">
 <div class="container-fluid ya-main-content ya-school-registration ya-standard-page">
 <h1 class="ya-page-title" style="border-bottom: none; margin-bottom: 15px; padding-bottom: 0;">Your School Staff</h1>
+<div id="staff-grid">
 <table id="schooltable">
 <thead>
     <tr>
@@ -180,13 +192,50 @@
     </tr>
 </thead>
 <tbody class="trainers-list">
+<tr>
+<td>reshma</td>
+<td>&nbsp;</td>
+<td>engg</td>
+<td>&nbsp;</td>
+<td>accept</td>
+</tr>
 </tbody>
 </table>
-<button type="button" id="searchButton" class="btn" @click="searchStaff">Staff Member</button>
-<div id="showbuttontxt">
-<div style="width: 50%">
-    <input type="text" id="searchParameter" class="input-block-level">
+</div>
+<div id="AddStaffButton">
+<button type="button" id="searchButton" class="btn btn-orange btn-large" @click="searchButtonClicked">Add a Staff Member</button>
+</div>
+<div id="StaffSearchParameters" style="display:none">
+<h1 class="ya-page-title" style="border-bottom: none; margin-bottom: 15px; padding-bottom: 0;">Add School Staff</h1>
+<hr>
+    <label style="display: inline; margin-right: 120px;">Search by</label>
+    <label style="display: inline;">Name</label>
+    <div>
+        <select v-model="searchParamterCriteria" name="SearchByParameter" id="SearchByParameter" style="width: 150px; height: 25px;  margin-right: 20px;">
+            <option value="Name">Name</option>
+            <option value="Email">Email</option>
+            <option value="ID" selected>ID</option>
+        </select>
+        <input style="display: inline; width: 150px; height: 15px;" type="text" v-model="searchParameterValue" id="searchParameter">
     </div>
+    <button class="btn btn-orange btn-large input-medium" style="width: 150px; height: 35px; font-size: small; text-align: top;"  id="searchButton1" @click="submit">Search </button>
+<br>
+    <br>
+    <br><hr>
+    <div id="SearchGrid" style="display:none">
+    <table id="schooltable1">
+        <thead>
+            <tr>
+                <label style="display: inline; font-weight: bold; margin-left: 10px; margin-right: 115px;">Name</label>
+                <label style="display: inline; font-weight: bold; margin-right: 110px;">Designation</label>
+                <label style="display: inline; font-weight: bold; color: maroon; margin-right: 10px;">Location</label>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    </div>
+    <button type="button" id="CancelButton2" class="btn" @click="searchStaff">Cancel</button>
 </div>
 </div></div></div></div>
 </div></div>
@@ -330,7 +379,7 @@
                             </div>
                         </div>
                         <p>
-                            <iframe src="/rysOwnershipAgreement" id="dnn_ctr4020_View_ucLegalAgreement_frmLegalAgreement" width="100%" height="200" style="padding: 15px 0px 15px 15px;"></iframe>
+                            <iframe src="/rysOwnershipAgreement" id="dnn_ctr4020_View_ucLegalAgreement_frmLegalAgreement" width="100%" height="200" style="padding: 15px 0px 15px 15px; background-color: white; border: 1px solid #979797;"></iframe>
                         </p>
                         <label class="checkbox">
                             
@@ -365,7 +414,7 @@
                             </div>
                         </div>
                         <p>
-                            <iframe src="/scopeOfPractice" id="dnn_ctr4020_View_ucLegalAgreement_frmScopeOfPractice" width="100%" height="200" style="padding: 15px 0px 15px 15px;"></iframe>
+                            <iframe src="/scopeOfPractice" id="dnn_ctr4020_View_ucLegalAgreement_frmScopeOfPractice" width="100%" height="200" style="padding: 15px 0px 15px 15px; background-color: white; border: 1px solid #979797;"></iframe>
                         </p>
                         <label class="checkbox">
                             
@@ -400,7 +449,7 @@
                             </div>
                         </div>
                         <p>
-                            <iframe src="/codeOfConduct" id="dnn_ctr4020_View_ucLegalAgreement_frmCodeOfConduct" width="100%" height="200" style="padding: 15px 0px 15px 15px;"></iframe>
+                            <iframe src="/codeOfConduct" id="dnn_ctr4020_View_ucLegalAgreement_frmCodeOfConduct" width="100%" height="200" style="padding: 15px 0px 15px 15px; background-color: white; border: 1px solid #979797;"></iframe>
                         </p>
                         <label class="checkbox">
                             
@@ -437,7 +486,7 @@
                             </div>
                         </div>
                         <p>
-                            <iframe src="/yogaTherapyPolicy" id="dnn_ctr4020_View_ucLegalAgreement_frmYogaTherapyPolicy" width="100%" height="200" style="padding: 15px 0px 15px 15px;"></iframe>
+                            <iframe src="/yogaTherapyPolicy" id="dnn_ctr4020_View_ucLegalAgreement_frmYogaTherapyPolicy" width="100%" height="200" style="padding: 15px 0px 15px 15px; background-color: white; border: 1px solid #979797;"></iframe>
                         </p>
                         <label class="checkbox">
                             
@@ -476,9 +525,8 @@
             <div class="fluid-row">
                 <div class="ya-widget ya_begin-application span8">
                     <div class="ya-continue-btn">
-                        <input type="submit" name="dnn$ctr4020$View$ucLegalAgreement$BtnDecline" value="Cancel" id="dnn_ctr4020_View_ucLegalAgreement_BtnDecline" tabindex="5" class="btn btn-default input-medium">
-                        <input type="submit" name="dnn$ctr4020$View$ucLegalAgreement$BtnContinue" value="Save Darft & Exit" onclick="return validateSchoolLegalAgreements();" id="dnn_ctr4020_View_ucLegalAgreement_BtnContinue" tabindex="4" class="btn btn-success input-medium">
-                        <input type="submit" name="dnn$ctr4020$View$ucLegalAgreement$BtnContinue" value="Save & Continue" onclick="return validateSchoolLegalAgreements();" id="dnn_ctr4020_View_ucLegalAgreement_BtnContinue" tabindex="4" class="btn btn-success input-medium">  
+                        <input type="submit" name="dnn$ctr4020$View$ucLegalAgreement$BtnDecline" value="Cancel" id="dnn_ctr4020_View_ucLegalAgreement_BtnDecline" tabindex="5" class="btn btn-default input-medium" style=" background-color: white; border-color: orange; width: 174px; height: 40px; color: orange;">
+                        <input type="submit" name="dnn$ctr4020$View$ucLegalAgreement$BtnContinue" value="Save & Continue" @click="redirecttoNext" id="dnn_ctr4020_View_ucLegalAgreement_BtnContinue" tabindex="4" class="btn btn-orange btn-large" style=" width: 174px; height: 40px;">  
                     </div>
                 </div>
             </div>
@@ -505,5 +553,127 @@
 </template>
 
 <script setup>
+import { $URL } from 'ufo';
+import { RouterLink } from 'vue-router';
 
+
+const searchParamterCriteria = ref('');
+const searchParameterValue = ref('');
+const name = ref('');
+const teacherList = [{id :875 ,name : "wilson" ,email: "wilson4545@gmail.com",designation: "software developer", location: "america" },
+{id :213 ,name : "kris" ,email: "kris@gmail.com",designation: "software developer", location: "america" },
+{id :896 ,name : "manu" ,email: "manu.h@gmail.com",designation: "software developer", location: "america" },
+{id :7965 ,name : "mathew" ,email: "mathewjohns@gmail.com",designation: "software developer", location: "america" },
+{id :86896 ,name : "rani" ,email: "raniphilip@gmail.com",designation: "software developer", location: "america" },
+{id :786 ,name : "fathima" ,email: "fathima231@gmail.com",designation: "software developer", location: "america" },
+{id :2678 ,name : "george" ,email: "grorge.gen@gmail.com",designation: "software developer", location: "america" }];
+var list = [];
+function redirecttoNext(){
+    navigateTo("/ProgramInformation");
+}
+function searchButtonClicked(){
+    console.log("clicked");
+    var x =document.getElementById("StaffSearchParameters");
+    if(x.style.display == "none"){
+        x.style.display = "block";
+    }
+    else{
+        x.style.display = "none";
+    }
+}
+
+function findTeacher(criteria,value){
+        return  teacherList.filter(function (el) {
+        return el[criteria] == value;
+      });  
+}
+
+function updateList(list){
+    var table = document.getElementById('schooltable1');
+    table.querySelectorAll('tbody').forEach((tbody, i) => {
+        if (i !== 0) {
+            table.removeChild(tbody);
+        }
+    });
+    var new_tbody = document.createElement('tbody');
+        
+    for (var i = 0; i < list.length; i++){
+        var tr= document.createElement('div'); 
+        tr.style="height: 70px; font-size: 20px; border-radius: 10px; padding: 10px; border: 2px solid lightgray; background-color: white;";
+
+        var td1 = document.createElement('label');
+        td1.style="display: inline; font-weight: bold; margin-right: 50px;";
+        var td2 = document.createElement('label');
+        td2.style="display: inline; font-weight: bold; margin-right: 130px;";
+        var td3 = document.createElement('label');
+        td3.style="display: inline; font-weight: bold; margin-right: 130px;";
+        var bt1 = document.createElement('button');
+        bt1.style="border-radius: 5px;";
+        bt1.innerHTML="Select";
+
+        var text1 = document.createTextNode(list[i].name);
+        var text2 = document.createTextNode(list[i].designation);
+        var text3 = document.createTextNode(list[i].location);
+
+        td1.appendChild(text1);
+        td2.appendChild(text2);
+        td3.appendChild(text3);
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(bt1);
+
+        new_tbody.appendChild(tr);
+    }
+    table.appendChild(new_tbody);
+}
+
+async function submitApi(){
+    let url = "https://devteam.yogaalliance.org/DesktopModules/YAServices/API/Trainers/List?";
+    let criteria;
+    if(searchParamterCriteria.value == "ID"){
+      url = url+"RegistryId="+searchParameterValue.value;
+      criteria = "id";
+    }
+    else if(searchParamterCriteria.value  == "Name"){
+        url = url + "ExactName="+searchParameterValue.value;
+        criteria = "name";
+    }
+    else{
+        url = url + "Email="+searchParameterValue.value;
+        criteria = "email";
+    }
+    var x =document.getElementById("SearchGrid");
+    x.style.display = "none"
+    x.style.display = "block"
+    //await $fetch( url, {
+    //    method: 'GET',
+    //    header: {"OpwDnnSharedKey": "d%vC&5$Uf&8ZuDTm5xd-XFFxrAYNQuK#H$XmZ+gs"}
+    //});
+
+    list =findTeacher();   
+}
+function submit(){
+    let url = "https://devteam.yogaalliance.org/DesktopModules/YAServices/API/Trainers/List?";
+    let criteria;
+    if(searchParamterCriteria.value == "ID"){
+      url = url+"RegistryId="+searchParameterValue.value;
+      criteria = "id";
+    }
+    else if(searchParamterCriteria.value  == "Name"){
+        url = url + "ExactName="+searchParameterValue.value;
+        criteria = "name";
+    }
+    else{
+        url = url + "Email="+searchParameterValue.value;
+        criteria = "email";
+    }
+
+    list =findTeacher(criteria,searchParameterValue.value);  
+    updateList(list);
+    console.log(list);
+    var grid =document.getElementById("SearchGrid");
+    grid.style.display = "block";
+    console.log("clicked");
+}
 </script>

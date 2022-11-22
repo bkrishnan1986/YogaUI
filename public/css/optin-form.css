@@ -12,7 +12,7 @@
     margin-top: -15px; } }
 
 .ya_optin-form-page .ya_header .ya_background {
-  background-image: url("/Portals/0/Skins/YogaV2/Images/optin-form/header-image-form.jpg");
+  background-image: url("../image/header-image-form.jpg");
   background-size: cover;
   background-position: top center;
   height: 80px; }
