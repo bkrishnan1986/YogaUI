@@ -300,8 +300,8 @@
 <label style="display: inline; font-weight: bold; margin-left: 10px; margin-right: 115px;">Name</label>
 <label style="display: inline; font-weight: bold; margin-right: 110px;">Designation</label>
 <label style="display: inline; font-weight: bold; color: maroon; margin-right: 10px;">Location</label>
-<div style="height: 70px; font-size: 20px; border-radius: 10px; padding: 10px; border: 2px solid lightgray; background-color: white;">
-<label style="display: inline; font-weight: bold; margin-right: 50px;"><a href="https://calendly.com/credentialingconsultation/60min" target="_blank" style="font-weight: bold;">Charlote Raiser</a></label>
+<div style="height: 50px; font-size: 20px; border-radius: 10px; padding: 10px; border: 2px solid lightgray; background-color: white;">
+<label style="display: inline; font-weight: bold; margin-right: 50px;"><a href="https://calendly.com/credentialingconsultation/60min" target="_blank" style="font-weight: bold;">John Abraham</a></label>
 <label style="display: inline; font-weight: bold; margin-right: 130px;">RYT 200</label>
 <label style="display: inline; font-weight: bold; margin-right: 130px;">Rockville, MD</label>
 <button style="border-radius: 5px;" id="selectTrainerButton" @click="selectTrainerButtonClicked">Select</button>
@@ -315,15 +315,15 @@
                                                         <label for="TxtSchoolName">  Yes</label><br>
                                                         <input id="dnn_SearchBar_SiteRadioButton" type="radio" checked="true" name="dnn$SearchBar$Search" value="SiteRadioButton" class="ya-highlight-checked" />
                                                         <label for="TxtSchoolName">  No</label><br>
-                                                        <h5 style="font-weight: bold;">Send confirmation email to Charlotte Raich</h5>
+                                                        <h5 style="font-weight: bold;">Send confirmation email to John Abraham</h5>
                                                                     <p style="margin-bottom: 30px; margin-right: 130px;">
                                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. <br><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                                             </p>
-                                                            <label>Enter a message for Charlotte Raich</label>
+                                                            <label>Enter a message for John Abraham</label>
                                                         <div style="height: 100px; padding: 10px; border: 2px solid lightgray; margin: 10px;"></div>
                                                         
 </div><br>
-                                                        <button type="button" id="trainerCancelButton" style="display:inline; margin: 10px;" class="btn" @click="searchStaff">Cancel</button>
+                                                        <button type="button" id="trainerCancelButton" style="display:inline; margin: 10px;" class="btn" @click="trainerCancelButtonClick">Cancel</button>
                                                         <button type="button" id="trainerBackButton" style="display: none; margin: 10px;" class="btn" @click="searchStaff">Back</button>
                                                         <button type="button" id="trainerSendButton" style="display: none; margin: 10px;" class="btn" @click="searchStaff">Send confirmation</button>
                                                             
@@ -359,8 +359,8 @@
 <label style="display: inline; font-weight: bold; margin-left: 10px; margin-right: 115px;">Name</label>
 <label style="display: inline; font-weight: bold; margin-right: 110px;">Designation</label>
 <label style="display: inline; font-weight: bold; color: maroon; margin-right: 10px;">Location</label>
-<div style="height: 70px; font-size: 20px; border-radius: 10px; padding: 10px; border: 2px solid lightgray; background-color: white;">
-<label style="display: inline; font-weight: bold; margin-right: 50px;"><a href="https://calendly.com/credentialingconsultation/60min" target="_blank" style="font-weight: bold;">Charlote Raiser</a></label>
+<div style="height: 50px; font-size: 20px; border-radius: 10px; padding: 10px; border: 2px solid lightgray; background-color: white;">
+<label style="display: inline; font-weight: bold; margin-right: 50px;"><a href="https://calendly.com/credentialingconsultation/60min" target="_blank" style="font-weight: bold;">John Abraham</a></label>
 <label style="display: inline; font-weight: bold; margin-right: 130px;">RYT 200</label>
 <label style="display: inline; font-weight: bold; margin-right: 130px;">Rockville, MD</label>
 <button style="border-radius: 5px;" id="selectFacultyButton" @click="selectFacultyButtonClicked">Select</button>
@@ -376,8 +376,8 @@
                                                                     </thead>
                                                                     <tbody>
                                                                         <tr>
-                                                                            <td style="text-align: left; width: auto; padding: 5px;">Charlote Raiser      </td>
-                                                                            <td style="text-align: left; width: auto; padding: 5px;">charlote@yogaalliance.org</td>
+                                                                            <td style="text-align: left; width: auto; padding: 5px;">John Abraham      </td>
+                                                                            <td style="text-align: left; width: auto; padding: 5px;">john@yogaalliance.org</td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
@@ -456,7 +456,7 @@
                                                                     <p style="margin-bottom: 30px; margin-right: 130px;">
                                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. <br><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                                             </p>
-                                                            <label>Enter a message for Charlotte Raich</label>
+                                                            <label>Enter a message for John Abraham</label>
                                                             <input style="height: 100px; border-radius: 7px; padding: 10px; border: 2px solid lightgray; margin: 10px; width: 600px;">
                                                         
                                                         
@@ -604,7 +604,7 @@ function addTrainerButtonClicked(){
     var y =document.getElementById("TrainerSearchForm");
     var back =document.getElementById("trainerBackButton");
     var send =document.getElementById("trainerSendButton");
-    var resultData =document.getElementById("displaytrainerResultData");
+    var resultData =document.getElementById("displayTrainerResultData");
     var detail =document.getElementById("displaytrainerdetailData");
     if(x.style.display == "none"){
         x.style.display = "block";
@@ -683,9 +683,9 @@ function trainerCancelButtonClick(){
     var y =document.getElementById("TrainerSearchForm");
     var back =document.getElementById("trainerBackButton");
     var send =document.getElementById("trainerSendButton");
-    var resultData =document.getElementById("displaytrainerResultData");
+    var resultData =document.getElementById("displayTrainerResultData");
     var detail =document.getElementById("displaytrainerdetailData");
-    x.style.display = "block";
+    x.style.display = "none";
     y.style.display = "block";
     back.style.display = "none";
     send.style.display = "none";
@@ -699,7 +699,7 @@ function facultyCancelButtonClick(){
     var send =document.getElementById("facultySendButton");
     var resultData =document.getElementById("displayFacultyResultData");
     var detail =document.getElementById("displayFacultydetailData");
-    x.style.display = "block";
+    x.style.display = "none";
     y.style.display = "block";
     back.style.display = "none";
     send.style.display = "none";
@@ -711,7 +711,7 @@ function selectTrainerButtonClicked(){
     var y =document.getElementById("TrainerSearchForm");
     var back =document.getElementById("trainerBackButton");
     var send =document.getElementById("trainerSendButton");
-    var result =document.getElementById("displaytrainerResultData");
+    var result =document.getElementById("displayTrainerResultData");
     result.style.display = "none";
         y.style.display = "none";
     if(x.style.display == "none"){

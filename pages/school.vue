@@ -128,7 +128,8 @@
 <div id="dnn_ctr4020_View_UcCreateSchool_createSchoolPanel" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;dnn_ctr4020_View_UcCreateSchool_BtnContinue&#39;)">
 <div class="content">
         <section class="ya-main ya-school-registration-1">
-            <h1 class="ya-page-title" style="border-bottom: none; margin-bottom: 15px; padding-bottom: 0;">School Information</h1>
+            <h1 class="ya-page-title" style="border-bottom: none; margin-bottom: 15px; padding-bottom: 0;">School Creation</h1>
+            <h1 class="ya-page-title" style="border-bottom: none; margin-bottom: 15px; padding-bottom: 0; color: black; font-size: 25px;">Contact Information</h1>
             <div class="row-fluid">
                 <div class="span8">
                     <div class="ya-warning-box" id="DivErrorEnglish" style="display: none">
@@ -139,7 +140,7 @@
                         <label for="TxtSchoolName">
                             School Name <span class="ya-required" style="font-size: 14px;">*</span>
                         </label>
-                        <div style="max-width: 500px"><input name="dnn$ctr4020$View$UcCreateSchool$TxtSchoolName" type="text" maxlength="200" id="TxtSchoolName" tabindex="1" onkeydown="onKeyDownSchoolName(event)" data-validateyogatherapy="True" data-yogatherapycontainerid="dnn_ctr4020_View_UcCreateSchool_createSchoolPanel" data-yogatherapysubmitid="dnn_ctr4020_View_UcCreateSchool_BtnContinue" data-yogatherapymodalid="schoolAddDisclaimerModal" data-validatefield="True" data-callback="callBackAfterChecking"></div>
+                        <div style="max-width: 500px"><input name="dnn$ctr4020$View$UcCreateSchool$TxtSchoolName"  style= "width: 100%;" type="text" maxlength="200" id="TxtSchoolName" tabindex="1" onkeydown="onKeyDownSchoolName(event)" data-validateyogatherapy="True" data-yogatherapycontainerid="dnn_ctr4020_View_UcCreateSchool_createSchoolPanel" data-yogatherapysubmitid="dnn_ctr4020_View_UcCreateSchool_BtnContinue" data-yogatherapymodalid="schoolAddDisclaimerModal" data-validatefield="True" data-callback="callBackAfterChecking"></div>
                         <span id="dnn_ctr4020_View_UcCreateSchool_rfvSchoolName" class="ya-validation-message" style="display:none;"><br>Please enter a School Name</span>
                         <span id="dnn_ctr4020_View_UcCreateSchool_ctl02" class="ya-validation-message" style="display:none;"></span>
                     </div>
@@ -152,14 +153,14 @@
                         <label class="ya-label">
                             Phone Number</label>
                         <div style="width: 100%">
-                            <input name="dnn$ctr4020$View$UcCreateSchool$TxtPhoneInfo" type="text" id="dnn_ctr4020_View_UcCreateSchool_TxtPhoneInfo" tabindex="8" class="input-block-level">
+                            <input name="dnn$ctr4020$View$UcCreateSchool$TxtPhoneInfo" type="text" id="dnn_ctr4020_View_UcCreateSchool_TxtPhoneInfo" tabindex="8" class="input-block-level" style= "width: 200%;">
                             <span id="dnn_ctr4020_View_UcCreateSchool_REV_Phone" class="ya-validation-message" style="display:none;"><br>Please enter a valid Phone</span>
                             <div class="help-block" style="margin-bottom: 20px;"><em>e.g. 123456789</em></div>
                         </div>
 
                         <label class="ya-label">Email</label>
                         <div style="width: 100%">
-                            <input name="dnn$ctr4020$View$UcCreateSchool$TxtSkypeInfo" type="text" id="dnn_ctr4020_View_UcCreateSchool_TxtSkypeInfo" class="input-block-level" tabindex="9">
+                            <input name="dnn$ctr4020$View$UcCreateSchool$TxtSkypeInfo" type="text" id="dnn_ctr4020_View_UcCreateSchool_TxtSkypeInfo" class="input-block-level" tabindex="9" style= "width: 200%;">
                         </div>
                     </div>
                 </div>
@@ -178,34 +179,26 @@
 <div id="dnn_ContentPane" class="yas-ContentPane"><div class="DnnModule DnnModule-SchoolNewRegisteration DnnModule-4020"><a name="4020"></a><div id="dnn_ctr4020_ContentPane"><!-- Start_Module_4020 --><div id="dnn_ctr4020_ModuleContent" class="DNNModuleContent ModSchoolNewRegisterationC">
 <div class="row-fluid">
 <div class="container-fluid ya-main-content ya-school-registration ya-standard-page">
-<h1 class="ya-page-title" style="border-bottom: none; margin-bottom: 15px; padding-bottom: 0;">Your School Staff</h1>
-<div id="staff-grid">
+<h1 class="ya-page-title" style="border-bottom: none; margin-bottom: 15px; padding-bottom: 0; color: black; font-size: 27px;">Your School Staff</h1>
+<br/>
+<div id="staff-grid" style="max-inline-size: 564px; display:none;">
 <table id="schooltable">
 <thead>
     <tr>
-        <th>&nbsp;</th>
-        <th>Name</th>
-        <th>&nbsp;</th>
-        <th>Roles</th>
-        <th>&nbsp;</th>
-        <th>Status</th>
+        <label style="display: inline; font-weight: bold; margin-left: 10px; margin-right: 115px;">Name</label>
+        <label style="display: inline; font-weight: bold; margin-right: 110px;">Roles</label>
+        <label style="display: inline; font-weight: bold; color: maroon; margin-right: 10px; margin-left: 44px;">Status</label>
     </tr>
 </thead>
-<tbody class="trainers-list">
-<tr>
-<td>reshma</td>
-<td>&nbsp;</td>
-<td>engg</td>
-<td>&nbsp;</td>
-<td>accept</td>
-</tr>
+<tbody>
 </tbody>
 </table>
 </div>
+<br/>
 <div id="AddStaffButton">
-<button type="button" id="searchButton" class="btn btn-orange btn-large" @click="searchButtonClicked">Add a Staff Member</button>
+<button type="button" id="searchButton" class="btn btn-orange btn-medium" @click="searchButtonClicked">Add a Staff Member</button>
 </div>
-<div id="StaffSearchParameters" style="display:none">
+<div id="StaffSearchParameters" style="display:none; background: #F9F9F9;;border: 2px solid black;padding: 39px;margin: 20px;">
 <h1 class="ya-page-title" style="border-bottom: none; margin-bottom: 15px; padding-bottom: 0;">Add School Staff</h1>
 <hr>
     <label style="display: inline; margin-right: 120px;">Search by</label>
@@ -218,7 +211,7 @@
         </select>
         <input style="display: inline; width: 150px; height: 15px;" type="text" v-model="searchParameterValue" id="searchParameter">
     </div>
-    <button class="btn btn-orange btn-large input-medium" style="width: 150px; height: 35px; font-size: small; text-align: top;"  id="searchButton1" @click="submit">Search </button>
+    <button class="btn btn-orange btn-medium"  id="searchButton1" @click="submit">Search </button>
 <br>
     <br>
     <br><hr>
@@ -235,7 +228,8 @@
         </tbody>
     </table>
     </div>
-    <button type="button" id="CancelButton2" class="btn" @click="searchStaff">Cancel</button>
+    <br/>
+    <button type="button" id="CancelButton2" class="btn" style=" background-color: white; border-color: orange; width: 77px; height: 31px; color: orange;" @click="searchStaff">Cancel</button>
 </div>
 </div></div></div></div>
 </div></div>
@@ -553,20 +547,17 @@
 </template>
 
 <script setup>
-import { $URL } from 'ufo';
-import { RouterLink } from 'vue-router';
-
 
 const searchParamterCriteria = ref('');
 const searchParameterValue = ref('');
 const name = ref('');
-const teacherList = [{id :875 ,name : "wilson" ,email: "wilson4545@gmail.com",designation: "software developer", location: "america" },
-{id :213 ,name : "kris" ,email: "kris@gmail.com",designation: "software developer", location: "america" },
-{id :896 ,name : "manu" ,email: "manu.h@gmail.com",designation: "software developer", location: "america" },
-{id :7965 ,name : "mathew" ,email: "mathewjohns@gmail.com",designation: "software developer", location: "america" },
-{id :86896 ,name : "rani" ,email: "raniphilip@gmail.com",designation: "software developer", location: "america" },
-{id :786 ,name : "fathima" ,email: "fathima231@gmail.com",designation: "software developer", location: "america" },
-{id :2678 ,name : "george" ,email: "grorge.gen@gmail.com",designation: "software developer", location: "america" }];
+const teacherList = [{id :875 ,name : "wilson" ,email: "wilson4545@gmail.com",designation: "Yoga Teacher", location: "Arlington, VA", roles: "developer", status: "APPROVED" },
+{id :213 ,name : "Kris" ,email: "kris@gmail.com",designation: "E-RYT 500", location: "Arlington, VA", roles: "developer", status: "APPROVED" },
+{id :896 ,name : "Manu" ,email: "manu.h@gmail.com",designation: "School Owner", location: "Arlington, VA", roles: "developer", status: "PENDING CONFIRMATION" },
+{id :7965 ,name : "Mathew" ,email: "mathewjohns@gmail.com",designation: "RYT 500", location: "Arlington, VA", roles: "developer", status: "APPROVED" },
+{id :86896 ,name : "Roger" ,email: "rogerphilip@gmail.com",designation: "RYT 500", location: "Arlington, VA", roles: "developer", status: "APPROVED" },
+{id :786 ,name : "Jasmin" ,email: "jasmin231@gmail.com",designation: "RYT 500", location: "London", roles: "developer", status: "DECLINED" },
+{id :2678 ,name : "George" ,email: "grorge.gen@gmail.com",designation: "E-RYT 500", location: "Arlington, VA", roles: "developer", status: "PENDING CONFIRMATION" }];
 var list = [];
 function redirecttoNext(){
     navigateTo("/ProgramInformation");
@@ -582,10 +573,47 @@ function searchButtonClicked(){
     }
 }
 
+function addButtonClicked(element){
+    let id = element.getAttribute("data-id");
+    console.log(id);
+    var newItem = findTeacher("id",id);
+    updateTeacherList(newItem);
+    debugger;
+    element.parentElement.remove()
+    
+}
+
 function findTeacher(criteria,value){
         return  teacherList.filter(function (el) {
         return el[criteria] == value;
       });  
+}
+
+function updateTeacherList(list){
+    var table = document.getElementById('schooltable');        
+    for (var i = 0; i < list.length; i++){
+        var tr= document.createElement('div'); 
+        tr.style="height: 70px; font-size: 20px; border-radius: 10px; padding: 10px; border: 2px solid lightgray; background-color: white;";
+
+        var td1 = document.createElement('label');
+        td1.style="display: inline; font-weight: bold; margin-right: 50px;";
+        var td2 = document.createElement('label');
+        td2.style="display: inline; font-weight: bold; margin-right: 130px;";
+        var td3 = document.createElement('label');
+        td3.style="display: inline; font-weight: bold; margin-right: 130px;";
+
+        var text1 = document.createTextNode(list[i].name);
+        var text2 = document.createTextNode(list[i].designation);
+        var text3 = document.createTextNode(list[i].location);
+
+        td1.appendChild(text1);
+        td2.appendChild(text2);
+        td3.appendChild(text3);
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        table.appendChild(tr);
+    }
 }
 
 function updateList(list){
@@ -609,7 +637,14 @@ function updateList(list){
         td3.style="display: inline; font-weight: bold; margin-right: 130px;";
         var bt1 = document.createElement('button');
         bt1.style="border-radius: 5px;";
-        bt1.innerHTML="Select";
+        bt1.innerHTML="Add";
+        bt1.setAttribute("data-id", list[i].id);
+        bt1.onclick = function(e,event){
+            e.preventDefault();
+            addButtonClicked(e.target);
+            var grid1 =document.getElementById("staff-grid");
+            grid1.style.display = "block";
+            };
 
         var text1 = document.createTextNode(list[i].name);
         var text2 = document.createTextNode(list[i].designation);
